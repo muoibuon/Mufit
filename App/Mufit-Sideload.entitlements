@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--
+	  Bản cài qua AltStore dùng Apple ID miễn phí, vốn không được cấp App Groups
+	  lẫn Sign in with Apple. Để trống hoàn toàn thì Xcode ký được, và AltStore
+	  cũng không phải gỡ bớt entitlement khi ký lại.
+	-->
+</dict>
+</plist>

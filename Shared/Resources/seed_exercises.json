@@ -1,0 +1,1897 @@
+[
+ {
+  "slug": "seed-barbell-back-squat",
+  "name": "Barbell Back Squat",
+  "primaryMuscle": "quads",
+  "secondaryMuscles": [
+   "glutes",
+   "hamstrings",
+   "core"
+  ],
+  "equipment": "barbell",
+  "met": 6.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-barbell-front-squat",
+  "name": "Barbell Front Squat",
+  "primaryMuscle": "quads",
+  "secondaryMuscles": [
+   "core",
+   "glutes"
+  ],
+  "equipment": "barbell",
+  "met": 6.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-box-squat",
+  "name": "Box Squat",
+  "primaryMuscle": "quads",
+  "secondaryMuscles": [
+   "glutes"
+  ],
+  "equipment": "barbell",
+  "met": 5.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-pause-squat",
+  "name": "Pause Squat",
+  "primaryMuscle": "quads",
+  "secondaryMuscles": [
+   "glutes",
+   "core"
+  ],
+  "equipment": "barbell",
+  "met": 6.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-hack-squat",
+  "name": "Hack Squat",
+  "primaryMuscle": "quads",
+  "secondaryMuscles": [
+   "glutes"
+  ],
+  "equipment": "machine",
+  "met": 5.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-goblet-squat",
+  "name": "Goblet Squat",
+  "primaryMuscle": "quads",
+  "secondaryMuscles": [
+   "glutes",
+   "core"
+  ],
+  "equipment": "dumbbell",
+  "met": 5.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-leg-press",
+  "name": "Leg Press",
+  "primaryMuscle": "quads",
+  "secondaryMuscles": [
+   "glutes"
+  ],
+  "equipment": "machine",
+  "met": 5.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-bulgarian-split-squat",
+  "name": "Bulgarian Split Squat",
+  "primaryMuscle": "quads",
+  "secondaryMuscles": [
+   "glutes",
+   "hamstrings"
+  ],
+  "equipment": "dumbbell",
+  "met": 5.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-walking-lunge",
+  "name": "Walking Lunge",
+  "primaryMuscle": "quads",
+  "secondaryMuscles": [
+   "glutes",
+   "hamstrings"
+  ],
+  "equipment": "dumbbell",
+  "met": 5.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-reverse-lunge",
+  "name": "Reverse Lunge",
+  "primaryMuscle": "quads",
+  "secondaryMuscles": [
+   "glutes"
+  ],
+  "equipment": "dumbbell",
+  "met": 5.2,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-step-up",
+  "name": "Step-up",
+  "primaryMuscle": "quads",
+  "secondaryMuscles": [
+   "glutes"
+  ],
+  "equipment": "dumbbell",
+  "met": 5.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-sissy-squat",
+  "name": "Sissy Squat",
+  "primaryMuscle": "quads",
+  "secondaryMuscles": [],
+  "equipment": "bodyweight",
+  "met": 4.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-leg-extension",
+  "name": "Leg Extension",
+  "primaryMuscle": "quads",
+  "secondaryMuscles": [],
+  "equipment": "machine",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-wall-sit",
+  "name": "Wall Sit",
+  "primaryMuscle": "quads",
+  "secondaryMuscles": [
+   "core"
+  ],
+  "equipment": "bodyweight",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-pistol-squat",
+  "name": "Pistol Squat",
+  "primaryMuscle": "quads",
+  "secondaryMuscles": [
+   "glutes",
+   "core"
+  ],
+  "equipment": "bodyweight",
+  "met": 5.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-belt-squat",
+  "name": "Belt Squat",
+  "primaryMuscle": "quads",
+  "secondaryMuscles": [
+   "glutes"
+  ],
+  "equipment": "machine",
+  "met": 5.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-conventional-deadlift",
+  "name": "Conventional Deadlift",
+  "primaryMuscle": "hamstrings",
+  "secondaryMuscles": [
+   "back",
+   "glutes",
+   "core"
+  ],
+  "equipment": "barbell",
+  "met": 6.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-sumo-deadlift",
+  "name": "Sumo Deadlift",
+  "primaryMuscle": "hamstrings",
+  "secondaryMuscles": [
+   "glutes",
+   "back"
+  ],
+  "equipment": "barbell",
+  "met": 6.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-romanian-deadlift",
+  "name": "Romanian Deadlift",
+  "primaryMuscle": "hamstrings",
+  "secondaryMuscles": [
+   "glutes",
+   "back"
+  ],
+  "equipment": "barbell",
+  "met": 6.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-stiff-leg-deadlift",
+  "name": "Stiff-leg Deadlift",
+  "primaryMuscle": "hamstrings",
+  "secondaryMuscles": [
+   "glutes",
+   "back"
+  ],
+  "equipment": "barbell",
+  "met": 6.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-single-leg-romanian-deadlift",
+  "name": "Single-leg Romanian Deadlift",
+  "primaryMuscle": "hamstrings",
+  "secondaryMuscles": [
+   "glutes",
+   "core"
+  ],
+  "equipment": "dumbbell",
+  "met": 5.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-lying-leg-curl",
+  "name": "Lying Leg Curl",
+  "primaryMuscle": "hamstrings",
+  "secondaryMuscles": [],
+  "equipment": "machine",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-seated-leg-curl",
+  "name": "Seated Leg Curl",
+  "primaryMuscle": "hamstrings",
+  "secondaryMuscles": [],
+  "equipment": "machine",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-nordic-hamstring-curl",
+  "name": "Nordic Hamstring Curl",
+  "primaryMuscle": "hamstrings",
+  "secondaryMuscles": [
+   "glutes"
+  ],
+  "equipment": "bodyweight",
+  "met": 5.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-good-morning",
+  "name": "Good Morning",
+  "primaryMuscle": "hamstrings",
+  "secondaryMuscles": [
+   "back",
+   "glutes"
+  ],
+  "equipment": "barbell",
+  "met": 5.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-glute-ham-raise",
+  "name": "Glute Ham Raise",
+  "primaryMuscle": "hamstrings",
+  "secondaryMuscles": [
+   "glutes",
+   "back"
+  ],
+  "equipment": "machine",
+  "met": 5.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-hip-thrust",
+  "name": "Hip Thrust",
+  "primaryMuscle": "glutes",
+  "secondaryMuscles": [
+   "hamstrings",
+   "core"
+  ],
+  "equipment": "barbell",
+  "met": 5.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-glute-bridge",
+  "name": "Glute Bridge",
+  "primaryMuscle": "glutes",
+  "secondaryMuscles": [
+   "hamstrings",
+   "core"
+  ],
+  "equipment": "bodyweight",
+  "met": 3.8,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-single-leg-hip-thrust",
+  "name": "Single-leg Hip Thrust",
+  "primaryMuscle": "glutes",
+  "secondaryMuscles": [
+   "hamstrings"
+  ],
+  "equipment": "bodyweight",
+  "met": 4.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-cable-kickback",
+  "name": "Cable Kickback",
+  "primaryMuscle": "glutes",
+  "secondaryMuscles": [],
+  "equipment": "cable",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-hip-abduction-machine",
+  "name": "Hip Abduction Machine",
+  "primaryMuscle": "glutes",
+  "secondaryMuscles": [],
+  "equipment": "machine",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-banded-lateral-walk",
+  "name": "Banded Lateral Walk",
+  "primaryMuscle": "glutes",
+  "secondaryMuscles": [
+   "quads"
+  ],
+  "equipment": "band",
+  "met": 3.8,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-sumo-squat",
+  "name": "Sumo Squat",
+  "primaryMuscle": "glutes",
+  "secondaryMuscles": [
+   "quads"
+  ],
+  "equipment": "dumbbell",
+  "met": 5.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-standing-calf-raise",
+  "name": "Standing Calf Raise",
+  "primaryMuscle": "calves",
+  "secondaryMuscles": [],
+  "equipment": "machine",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-seated-calf-raise",
+  "name": "Seated Calf Raise",
+  "primaryMuscle": "calves",
+  "secondaryMuscles": [],
+  "equipment": "machine",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-donkey-calf-raise",
+  "name": "Donkey Calf Raise",
+  "primaryMuscle": "calves",
+  "secondaryMuscles": [],
+  "equipment": "machine",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-single-leg-calf-raise",
+  "name": "Single-leg Calf Raise",
+  "primaryMuscle": "calves",
+  "secondaryMuscles": [],
+  "equipment": "bodyweight",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-barbell-bench-press",
+  "name": "Barbell Bench Press",
+  "primaryMuscle": "chest",
+  "secondaryMuscles": [
+   "triceps",
+   "shoulders"
+  ],
+  "equipment": "barbell",
+  "met": 5.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-incline-barbell-press",
+  "name": "Incline Barbell Press",
+  "primaryMuscle": "chest",
+  "secondaryMuscles": [
+   "shoulders",
+   "triceps"
+  ],
+  "equipment": "barbell",
+  "met": 5.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-decline-barbell-press",
+  "name": "Decline Barbell Press",
+  "primaryMuscle": "chest",
+  "secondaryMuscles": [
+   "triceps"
+  ],
+  "equipment": "barbell",
+  "met": 5.2,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-dumbbell-bench-press",
+  "name": "Dumbbell Bench Press",
+  "primaryMuscle": "chest",
+  "secondaryMuscles": [
+   "triceps",
+   "shoulders"
+  ],
+  "equipment": "dumbbell",
+  "met": 5.2,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-incline-dumbbell-press",
+  "name": "Incline Dumbbell Press",
+  "primaryMuscle": "chest",
+  "secondaryMuscles": [
+   "shoulders",
+   "triceps"
+  ],
+  "equipment": "dumbbell",
+  "met": 5.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-dumbbell-fly",
+  "name": "Dumbbell Fly",
+  "primaryMuscle": "chest",
+  "secondaryMuscles": [
+   "shoulders"
+  ],
+  "equipment": "dumbbell",
+  "met": 4.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-incline-dumbbell-fly",
+  "name": "Incline Dumbbell Fly",
+  "primaryMuscle": "chest",
+  "secondaryMuscles": [
+   "shoulders"
+  ],
+  "equipment": "dumbbell",
+  "met": 4.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-cable-crossover",
+  "name": "Cable Crossover",
+  "primaryMuscle": "chest",
+  "secondaryMuscles": [
+   "shoulders"
+  ],
+  "equipment": "cable",
+  "met": 4.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-pec-deck",
+  "name": "Pec Deck",
+  "primaryMuscle": "chest",
+  "secondaryMuscles": [],
+  "equipment": "machine",
+  "met": 3.8,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-push-up",
+  "name": "Push-up",
+  "primaryMuscle": "chest",
+  "secondaryMuscles": [
+   "triceps",
+   "core"
+  ],
+  "equipment": "bodyweight",
+  "met": 4.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-incline-push-up",
+  "name": "Incline Push-up",
+  "primaryMuscle": "chest",
+  "secondaryMuscles": [
+   "triceps"
+  ],
+  "equipment": "bodyweight",
+  "met": 3.8,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-diamond-push-up",
+  "name": "Diamond Push-up",
+  "primaryMuscle": "chest",
+  "secondaryMuscles": [
+   "triceps"
+  ],
+  "equipment": "bodyweight",
+  "met": 4.8,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-chest-dip",
+  "name": "Chest Dip",
+  "primaryMuscle": "chest",
+  "secondaryMuscles": [
+   "triceps",
+   "shoulders"
+  ],
+  "equipment": "bodyweight",
+  "met": 5.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-machine-chest-press",
+  "name": "Machine Chest Press",
+  "primaryMuscle": "chest",
+  "secondaryMuscles": [
+   "triceps"
+  ],
+  "equipment": "machine",
+  "met": 4.8,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-svend-press",
+  "name": "Svend Press",
+  "primaryMuscle": "chest",
+  "secondaryMuscles": [],
+  "equipment": "other",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-pull-up",
+  "name": "Pull-up",
+  "primaryMuscle": "back",
+  "secondaryMuscles": [
+   "biceps",
+   "forearms"
+  ],
+  "equipment": "bodyweight",
+  "met": 5.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-chin-up",
+  "name": "Chin-up",
+  "primaryMuscle": "back",
+  "secondaryMuscles": [
+   "biceps"
+  ],
+  "equipment": "bodyweight",
+  "met": 5.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-wide-grip-pull-up",
+  "name": "Wide-grip Pull-up",
+  "primaryMuscle": "back",
+  "secondaryMuscles": [
+   "biceps"
+  ],
+  "equipment": "bodyweight",
+  "met": 5.8,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-lat-pulldown",
+  "name": "Lat Pulldown",
+  "primaryMuscle": "back",
+  "secondaryMuscles": [
+   "biceps"
+  ],
+  "equipment": "cable",
+  "met": 5.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-close-grip-lat-pulldown",
+  "name": "Close-grip Lat Pulldown",
+  "primaryMuscle": "back",
+  "secondaryMuscles": [
+   "biceps"
+  ],
+  "equipment": "cable",
+  "met": 5.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-straight-arm-pulldown",
+  "name": "Straight-arm Pulldown",
+  "primaryMuscle": "back",
+  "secondaryMuscles": [
+   "triceps"
+  ],
+  "equipment": "cable",
+  "met": 4.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-barbell-bent-over-row",
+  "name": "Barbell Bent-over Row",
+  "primaryMuscle": "back",
+  "secondaryMuscles": [
+   "biceps",
+   "core"
+  ],
+  "equipment": "barbell",
+  "met": 5.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-pendlay-row",
+  "name": "Pendlay Row",
+  "primaryMuscle": "back",
+  "secondaryMuscles": [
+   "biceps"
+  ],
+  "equipment": "barbell",
+  "met": 5.8,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-t-bar-row",
+  "name": "T-Bar Row",
+  "primaryMuscle": "back",
+  "secondaryMuscles": [
+   "biceps"
+  ],
+  "equipment": "barbell",
+  "met": 5.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-seated-cable-row",
+  "name": "Seated Cable Row",
+  "primaryMuscle": "back",
+  "secondaryMuscles": [
+   "biceps"
+  ],
+  "equipment": "cable",
+  "met": 5.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-single-arm-dumbbell-row",
+  "name": "Single-arm Dumbbell Row",
+  "primaryMuscle": "back",
+  "secondaryMuscles": [
+   "biceps",
+   "core"
+  ],
+  "equipment": "dumbbell",
+  "met": 5.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-chest-supported-row",
+  "name": "Chest-supported Row",
+  "primaryMuscle": "back",
+  "secondaryMuscles": [
+   "biceps"
+  ],
+  "equipment": "machine",
+  "met": 4.8,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-inverted-row",
+  "name": "Inverted Row",
+  "primaryMuscle": "back",
+  "secondaryMuscles": [
+   "biceps",
+   "core"
+  ],
+  "equipment": "bodyweight",
+  "met": 4.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-back-extension",
+  "name": "Back Extension",
+  "primaryMuscle": "back",
+  "secondaryMuscles": [
+   "glutes",
+   "hamstrings"
+  ],
+  "equipment": "bodyweight",
+  "met": 4.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-rack-pull",
+  "name": "Rack Pull",
+  "primaryMuscle": "back",
+  "secondaryMuscles": [
+   "hamstrings",
+   "glutes"
+  ],
+  "equipment": "barbell",
+  "met": 6.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-shrug",
+  "name": "Shrug",
+  "primaryMuscle": "back",
+  "secondaryMuscles": [
+   "forearms"
+  ],
+  "equipment": "barbell",
+  "met": 4.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-overhead-press",
+  "name": "Overhead Press",
+  "primaryMuscle": "shoulders",
+  "secondaryMuscles": [
+   "triceps",
+   "core"
+  ],
+  "equipment": "barbell",
+  "met": 5.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-push-press",
+  "name": "Push Press",
+  "primaryMuscle": "shoulders",
+  "secondaryMuscles": [
+   "triceps",
+   "quads"
+  ],
+  "equipment": "barbell",
+  "met": 6.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-seated-dumbbell-shoulder-press",
+  "name": "Seated Dumbbell Shoulder Press",
+  "primaryMuscle": "shoulders",
+  "secondaryMuscles": [
+   "triceps"
+  ],
+  "equipment": "dumbbell",
+  "met": 4.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-arnold-press",
+  "name": "Arnold Press",
+  "primaryMuscle": "shoulders",
+  "secondaryMuscles": [
+   "triceps"
+  ],
+  "equipment": "dumbbell",
+  "met": 4.8,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-lateral-raise",
+  "name": "Lateral Raise",
+  "primaryMuscle": "shoulders",
+  "secondaryMuscles": [],
+  "equipment": "dumbbell",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-cable-lateral-raise",
+  "name": "Cable Lateral Raise",
+  "primaryMuscle": "shoulders",
+  "secondaryMuscles": [],
+  "equipment": "cable",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-front-raise",
+  "name": "Front Raise",
+  "primaryMuscle": "shoulders",
+  "secondaryMuscles": [],
+  "equipment": "dumbbell",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-rear-delt-fly",
+  "name": "Rear Delt Fly",
+  "primaryMuscle": "shoulders",
+  "secondaryMuscles": [
+   "back"
+  ],
+  "equipment": "dumbbell",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-face-pull",
+  "name": "Face Pull",
+  "primaryMuscle": "shoulders",
+  "secondaryMuscles": [
+   "back"
+  ],
+  "equipment": "cable",
+  "met": 3.8,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-upright-row",
+  "name": "Upright Row",
+  "primaryMuscle": "shoulders",
+  "secondaryMuscles": [
+   "back"
+  ],
+  "equipment": "barbell",
+  "met": 4.2,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-landmine-press",
+  "name": "Landmine Press",
+  "primaryMuscle": "shoulders",
+  "secondaryMuscles": [
+   "triceps",
+   "core"
+  ],
+  "equipment": "barbell",
+  "met": 4.8,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-barbell-curl",
+  "name": "Barbell Curl",
+  "primaryMuscle": "biceps",
+  "secondaryMuscles": [
+   "forearms"
+  ],
+  "equipment": "barbell",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-ez-bar-curl",
+  "name": "EZ-Bar Curl",
+  "primaryMuscle": "biceps",
+  "secondaryMuscles": [
+   "forearms"
+  ],
+  "equipment": "barbell",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-dumbbell-hammer-curl",
+  "name": "Dumbbell Hammer Curl",
+  "primaryMuscle": "biceps",
+  "secondaryMuscles": [
+   "forearms"
+  ],
+  "equipment": "dumbbell",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-incline-dumbbell-curl",
+  "name": "Incline Dumbbell Curl",
+  "primaryMuscle": "biceps",
+  "secondaryMuscles": [],
+  "equipment": "dumbbell",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-preacher-curl",
+  "name": "Preacher Curl",
+  "primaryMuscle": "biceps",
+  "secondaryMuscles": [],
+  "equipment": "machine",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-cable-curl",
+  "name": "Cable Curl",
+  "primaryMuscle": "biceps",
+  "secondaryMuscles": [],
+  "equipment": "cable",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-concentration-curl",
+  "name": "Concentration Curl",
+  "primaryMuscle": "biceps",
+  "secondaryMuscles": [],
+  "equipment": "dumbbell",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-spider-curl",
+  "name": "Spider Curl",
+  "primaryMuscle": "biceps",
+  "secondaryMuscles": [],
+  "equipment": "dumbbell",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-triceps-pushdown",
+  "name": "Triceps Pushdown",
+  "primaryMuscle": "triceps",
+  "secondaryMuscles": [],
+  "equipment": "cable",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-rope-pushdown",
+  "name": "Rope Pushdown",
+  "primaryMuscle": "triceps",
+  "secondaryMuscles": [],
+  "equipment": "cable",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-skull-crusher",
+  "name": "Skull Crusher",
+  "primaryMuscle": "triceps",
+  "secondaryMuscles": [],
+  "equipment": "barbell",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-overhead-triceps-extension",
+  "name": "Overhead Triceps Extension",
+  "primaryMuscle": "triceps",
+  "secondaryMuscles": [],
+  "equipment": "dumbbell",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-close-grip-bench-press",
+  "name": "Close-grip Bench Press",
+  "primaryMuscle": "triceps",
+  "secondaryMuscles": [
+   "chest",
+   "shoulders"
+  ],
+  "equipment": "barbell",
+  "met": 5.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-triceps-dip",
+  "name": "Triceps Dip",
+  "primaryMuscle": "triceps",
+  "secondaryMuscles": [
+   "chest"
+  ],
+  "equipment": "bodyweight",
+  "met": 4.8,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-bench-dip",
+  "name": "Bench Dip",
+  "primaryMuscle": "triceps",
+  "secondaryMuscles": [],
+  "equipment": "bodyweight",
+  "met": 4.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-kickback",
+  "name": "Kickback",
+  "primaryMuscle": "triceps",
+  "secondaryMuscles": [],
+  "equipment": "dumbbell",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-farmer-s-carry",
+  "name": "Farmer's Carry",
+  "primaryMuscle": "forearms",
+  "secondaryMuscles": [
+   "core",
+   "back"
+  ],
+  "equipment": "dumbbell",
+  "met": 5.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-wrist-curl",
+  "name": "Wrist Curl",
+  "primaryMuscle": "forearms",
+  "secondaryMuscles": [],
+  "equipment": "barbell",
+  "met": 3.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-reverse-wrist-curl",
+  "name": "Reverse Wrist Curl",
+  "primaryMuscle": "forearms",
+  "secondaryMuscles": [],
+  "equipment": "barbell",
+  "met": 3.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-dead-hang",
+  "name": "Dead Hang",
+  "primaryMuscle": "forearms",
+  "secondaryMuscles": [
+   "back"
+  ],
+  "equipment": "bodyweight",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-plate-pinch",
+  "name": "Plate Pinch",
+  "primaryMuscle": "forearms",
+  "secondaryMuscles": [],
+  "equipment": "other",
+  "met": 3.2,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-plank",
+  "name": "Plank",
+  "primaryMuscle": "core",
+  "secondaryMuscles": [
+   "shoulders"
+  ],
+  "equipment": "bodyweight",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-side-plank",
+  "name": "Side Plank",
+  "primaryMuscle": "core",
+  "secondaryMuscles": [
+   "glutes"
+  ],
+  "equipment": "bodyweight",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-dead-bug",
+  "name": "Dead Bug",
+  "primaryMuscle": "core",
+  "secondaryMuscles": [],
+  "equipment": "bodyweight",
+  "met": 3.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-bird-dog",
+  "name": "Bird Dog",
+  "primaryMuscle": "core",
+  "secondaryMuscles": [
+   "glutes",
+   "back"
+  ],
+  "equipment": "bodyweight",
+  "met": 3.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-hanging-leg-raise",
+  "name": "Hanging Leg Raise",
+  "primaryMuscle": "core",
+  "secondaryMuscles": [
+   "forearms"
+  ],
+  "equipment": "bodyweight",
+  "met": 4.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-hanging-knee-raise",
+  "name": "Hanging Knee Raise",
+  "primaryMuscle": "core",
+  "secondaryMuscles": [
+   "forearms"
+  ],
+  "equipment": "bodyweight",
+  "met": 3.8,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-cable-woodchop",
+  "name": "Cable Woodchop",
+  "primaryMuscle": "core",
+  "secondaryMuscles": [
+   "shoulders"
+  ],
+  "equipment": "cable",
+  "met": 4.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-cable-crunch",
+  "name": "Cable Crunch",
+  "primaryMuscle": "core",
+  "secondaryMuscles": [],
+  "equipment": "cable",
+  "met": 3.8,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-russian-twist",
+  "name": "Russian Twist",
+  "primaryMuscle": "core",
+  "secondaryMuscles": [],
+  "equipment": "bodyweight",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-ab-wheel-rollout",
+  "name": "Ab Wheel Rollout",
+  "primaryMuscle": "core",
+  "secondaryMuscles": [
+   "shoulders"
+  ],
+  "equipment": "other",
+  "met": 4.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-mountain-climber",
+  "name": "Mountain Climber",
+  "primaryMuscle": "core",
+  "secondaryMuscles": [
+   "shoulders",
+   "quads"
+  ],
+  "equipment": "bodyweight",
+  "met": 6.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-reverse-crunch",
+  "name": "Reverse Crunch",
+  "primaryMuscle": "core",
+  "secondaryMuscles": [],
+  "equipment": "bodyweight",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-pallof-press",
+  "name": "Pallof Press",
+  "primaryMuscle": "core",
+  "secondaryMuscles": [
+   "shoulders"
+  ],
+  "equipment": "cable",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-v-up",
+  "name": "V-up",
+  "primaryMuscle": "core",
+  "secondaryMuscles": [],
+  "equipment": "bodyweight",
+  "met": 4.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-hollow-body-hold",
+  "name": "Hollow Body Hold",
+  "primaryMuscle": "core",
+  "secondaryMuscles": [],
+  "equipment": "bodyweight",
+  "met": 3.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-kettlebell-swing",
+  "name": "Kettlebell Swing",
+  "primaryMuscle": "fullBody",
+  "secondaryMuscles": [
+   "glutes",
+   "hamstrings",
+   "core"
+  ],
+  "equipment": "kettlebell",
+  "met": 7.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-burpee",
+  "name": "Burpee",
+  "primaryMuscle": "fullBody",
+  "secondaryMuscles": [
+   "chest",
+   "quads",
+   "core"
+  ],
+  "equipment": "bodyweight",
+  "met": 8.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-clean-and-press",
+  "name": "Clean and Press",
+  "primaryMuscle": "fullBody",
+  "secondaryMuscles": [
+   "shoulders",
+   "quads",
+   "back"
+  ],
+  "equipment": "barbell",
+  "met": 7.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-power-clean",
+  "name": "Power Clean",
+  "primaryMuscle": "fullBody",
+  "secondaryMuscles": [
+   "quads",
+   "back",
+   "shoulders"
+  ],
+  "equipment": "barbell",
+  "met": 8.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-snatch",
+  "name": "Snatch",
+  "primaryMuscle": "fullBody",
+  "secondaryMuscles": [
+   "shoulders",
+   "quads",
+   "back"
+  ],
+  "equipment": "barbell",
+  "met": 8.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-thruster",
+  "name": "Thruster",
+  "primaryMuscle": "fullBody",
+  "secondaryMuscles": [
+   "quads",
+   "shoulders"
+  ],
+  "equipment": "barbell",
+  "met": 7.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-turkish-get-up",
+  "name": "Turkish Get-up",
+  "primaryMuscle": "fullBody",
+  "secondaryMuscles": [
+   "core",
+   "shoulders"
+  ],
+  "equipment": "kettlebell",
+  "met": 6.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-battle-rope",
+  "name": "Battle Rope",
+  "primaryMuscle": "fullBody",
+  "secondaryMuscles": [
+   "shoulders",
+   "core"
+  ],
+  "equipment": "other",
+  "met": 8.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-sled-push",
+  "name": "Sled Push",
+  "primaryMuscle": "fullBody",
+  "secondaryMuscles": [
+   "quads",
+   "glutes"
+  ],
+  "equipment": "other",
+  "met": 8.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-box-jump",
+  "name": "Box Jump",
+  "primaryMuscle": "fullBody",
+  "secondaryMuscles": [
+   "quads",
+   "calves"
+  ],
+  "equipment": "bodyweight",
+  "met": 7.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-bear-crawl",
+  "name": "Bear Crawl",
+  "primaryMuscle": "fullBody",
+  "secondaryMuscles": [
+   "core",
+   "shoulders"
+  ],
+  "equipment": "bodyweight",
+  "met": 6.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-treadmill-run",
+  "name": "Treadmill Run",
+  "primaryMuscle": "cardio",
+  "secondaryMuscles": [
+   "quads",
+   "calves"
+  ],
+  "equipment": "machine",
+  "met": 9.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-treadmill-incline-walk",
+  "name": "Treadmill Incline Walk",
+  "primaryMuscle": "cardio",
+  "secondaryMuscles": [
+   "quads",
+   "glutes"
+  ],
+  "equipment": "machine",
+  "met": 6.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-brisk-walking",
+  "name": "Brisk Walking",
+  "primaryMuscle": "cardio",
+  "secondaryMuscles": [
+   "quads",
+   "calves"
+  ],
+  "equipment": "bodyweight",
+  "met": 4.3,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-outdoor-running",
+  "name": "Outdoor Running",
+  "primaryMuscle": "cardio",
+  "secondaryMuscles": [
+   "quads",
+   "calves"
+  ],
+  "equipment": "bodyweight",
+  "met": 9.8,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-stationary-cycling",
+  "name": "Stationary Cycling",
+  "primaryMuscle": "cardio",
+  "secondaryMuscles": [
+   "quads"
+  ],
+  "equipment": "machine",
+  "met": 7.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-outdoor-cycling",
+  "name": "Outdoor Cycling",
+  "primaryMuscle": "cardio",
+  "secondaryMuscles": [
+   "quads",
+   "calves"
+  ],
+  "equipment": "other",
+  "met": 8.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-rowing-machine",
+  "name": "Rowing Machine",
+  "primaryMuscle": "cardio",
+  "secondaryMuscles": [
+   "back",
+   "quads",
+   "core"
+  ],
+  "equipment": "machine",
+  "met": 7.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-elliptical-trainer",
+  "name": "Elliptical Trainer",
+  "primaryMuscle": "cardio",
+  "secondaryMuscles": [
+   "quads",
+   "glutes"
+  ],
+  "equipment": "machine",
+  "met": 5.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-stair-climber",
+  "name": "Stair Climber",
+  "primaryMuscle": "cardio",
+  "secondaryMuscles": [
+   "quads",
+   "glutes",
+   "calves"
+  ],
+  "equipment": "machine",
+  "met": 9.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-jump-rope",
+  "name": "Jump Rope",
+  "primaryMuscle": "cardio",
+  "secondaryMuscles": [
+   "calves"
+  ],
+  "equipment": "other",
+  "met": 11.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-swimming-freestyle-moderate",
+  "name": "Swimming (freestyle, moderate)",
+  "primaryMuscle": "cardio",
+  "secondaryMuscles": [
+   "back",
+   "shoulders"
+  ],
+  "equipment": "bodyweight",
+  "met": 8.3,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-swimming-breaststroke",
+  "name": "Swimming (breaststroke)",
+  "primaryMuscle": "cardio",
+  "secondaryMuscles": [
+   "chest",
+   "shoulders"
+  ],
+  "equipment": "bodyweight",
+  "met": 10.3,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-badminton",
+  "name": "Badminton",
+  "primaryMuscle": "cardio",
+  "secondaryMuscles": [
+   "quads",
+   "shoulders"
+  ],
+  "equipment": "other",
+  "met": 5.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-football-a-bong",
+  "name": "Football (đá bóng)",
+  "primaryMuscle": "cardio",
+  "secondaryMuscles": [
+   "quads",
+   "calves"
+  ],
+  "equipment": "other",
+  "met": 7.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-basketball",
+  "name": "Basketball",
+  "primaryMuscle": "cardio",
+  "secondaryMuscles": [
+   "quads",
+   "calves"
+  ],
+  "equipment": "other",
+  "met": 6.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-hiit-circuit",
+  "name": "HIIT Circuit",
+  "primaryMuscle": "cardio",
+  "secondaryMuscles": [
+   "fullBody"
+  ],
+  "equipment": "bodyweight",
+  "met": 8.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-yoga-hatha",
+  "name": "Yoga (Hatha)",
+  "primaryMuscle": "cardio",
+  "secondaryMuscles": [
+   "core"
+  ],
+  "equipment": "bodyweight",
+  "met": 2.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-pilates",
+  "name": "Pilates",
+  "primaryMuscle": "core",
+  "secondaryMuscles": [
+   "fullBody"
+  ],
+  "equipment": "bodyweight",
+  "met": 3.0,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-stretching-gian-co",
+  "name": "Stretching / giãn cơ",
+  "primaryMuscle": "core",
+  "secondaryMuscles": [],
+  "equipment": "bodyweight",
+  "met": 2.3,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ },
+ {
+  "slug": "seed-i-bo-leo-doc",
+  "name": "Đi bộ leo dốc",
+  "primaryMuscle": "cardio",
+  "secondaryMuscles": [
+   "quads",
+   "glutes"
+  ],
+  "equipment": "bodyweight",
+  "met": 6.5,
+  "instructions": "",
+  "sourceName": "Compendium of Physical Activities (Ainsworth 2011)",
+  "sourceURL": "https://pacompendium.com"
+ }
+]

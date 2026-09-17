@@ -1,0 +1,962 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BE767B65FAF19B4913DD945 /* Enums.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 971599F17A8DE90F19671563; };
+		D5D360E11461D5584E0929D0 /* Nutrition.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 6C165AB4B88B6A962AFB558B; };
+		E65C71B1ED1535AEEECE4FB9 /* Profile.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = D5B7ACFF740677008138DD90; };
+		6FBEA8DB9912990C956B2BA5 /* Training.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = B72357C1ACAA9CDAEB8C92F9; };
+		A21C828B809B14412A330DBE /* AuthConfig.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 27E374378B6C9BE9765772D1; };
+		26413F21D1CFE0418092EAD8 /* AuthService.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = EA7FE873D268C1B101E9D97C; };
+		0F256CEBC6F9C79C31D4867A /* BackupPayload.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 80B621B66CDD28D340A35246; };
+		83E3A708BE9F7A4720DD468B /* BodyCompositionAnalyzer.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = C83FFB79AB44DA3E334D956D; };
+		D6844EE3733C64D03CF09424 /* CatalogStore.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 4FAFE78C217B6EF31E92F995; };
+		3B87696989FA6BDD43A0C6F0 /* ConditionAdvisor.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 87297292CEC3F1C6BBED2097; };
+		6C75D9F6E6C3F5F9E9A53F98 /* EnergyCalculator.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 5D52D09D00902571DA2AC525; };
+		FFEDCB999E7D85F76280B07F /* ExerciseCatalogService.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = DC82A508B024AB2CF38A72BF; };
+		47B073FBB71EE87137CC5BDE /* FirebaseAuthClient.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 7B51C097C8B8407A945F6F20; };
+		762C4FE763AE481AC953E6D5 /* FirebaseConfig.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = B3DF26E6D7BDB495702EBE99; };
+		5D00EE42A1D6F25E243839AB /* FirestoreClient.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 0B140D59FB15D7D4702698E1; };
+		70A8748320DE3A1AB3E9E066 /* FoodDatabaseService.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = E2C65F3A3DD01310D542FA85; };
+		BC67EC3DADFD04D4CE188F0F /* HydrationAdvisor.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 23125608ED85FC030E9AD10D; };
+		13A9047E38A84071F0350CBF /* HydrationIntent.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 358B5493B3A42D6701259A9C; };
+		E7D7E33445CCE1BEA359E8AE /* Keychain.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = C63BBA771D91A126C4FC8078; };
+		60441C153AD504463C9AA6EC /* LocationActivityService.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 4F7AA51C4C3AC28CFFF02DF1; };
+		2445F4D5A6781C0F1084FE93 /* MuscleBalanceAnalyzer.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = A822CF041BA16945B77B2FC6; };
+		3551E4743AD466B0DB5F2A39 /* SharedStore.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 0013675E7E109D8A8F0F07C7; };
+		31CE3B87A74BCA4FE679BF72 /* StreakCalculator.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = CA4854774016BE0F10495AA6; };
+		6D150EE955CE5F189368B420 /* WeatherService.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 861C168F0EA593F96BB033DA; };
+		698A77C719CBD1EA2EAE0A2D /* WeatherStore.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 7D2138701D906F2357E0133A; };
+		6AD2D7FCA62605450D7D969D /* WidgetData.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 6909886609B626092068DDF0; };
+		71A18045289882636C02E23A /* AppRouter.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = AAA78DF6CA2E4BC5F8BDD20C; };
+		0D9F35B7169073335495C81E /* Components.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = DA9D3DCFA362AD806F9A2F17; };
+		70701F7F6E350BF2FBAF4695 /* Formatting.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 9E6ECE9DAAC88F471837501A; };
+		4D91CF22F74D113428FF1190 /* MufitApp.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 4D536C7B1BB9AADCE3812ABB; };
+		CE76EF7CBD6F71CD6F573AA9 /* AdviceEngine.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 412FEE9DB7BCF4A441D2EF65; };
+		8D0A3AF7E56EDCF376CD83FB /* AnatomicalMuscle.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = AF8ECA51B56908FDEDA2FBDB; };
+		2C4ACE978BECC99CCA298D01 /* AnatomicalTrainingTracker.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 0E2BAB79B723202DDE3A8081; };
+		FCB7EB1DB3FF19F06FD5CB2F /* MuscleTrainingGuidance.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 3F0C4746036444EC391CA38F; };
+		AFB7A66B286854296EDDE7C1 /* SyncService.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 4C9C19D88F7E67CB0394B47D; };
+		915B08F3143AA225C00DE20E /* WeeklyMuscleTracker+Models.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 3CDD2A1B3CE7590C763D4998; };
+		DC3454B519FE1257AFF82D0C /* WeeklyMuscleTracker.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = FA4C4E9E833AE552D71CC428; };
+		DEAE3318C371729701A90F3C /* WorkoutDraft.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 215CE3862DE0BB0C54ED1581; };
+		F794F5379756CB09383304D4 /* BrandLogos.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 5D6D90F7B95D61DD928D08FC; };
+		C6B4900B1C7196F1A3223555 /* LaunchGateView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 6AD310F331D8E1FF18761B70; };
+		1EC66B4088F31E046FA37C24 /* SignInView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 7FA236E6507BE7545E33FF5E; };
+		BDB170349C2B358563DF2D0B /* AddMeasurementView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = D0530257FD0D8B5D8D47FB73; };
+		5B2C95981FF16F7E3504E521 /* BodyView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = CB89E3E022B5E8075FB82A16; };
+		AFE4060275ED20AE7637CFD1 /* ConditionGuidanceView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 304106EAECC01AFBE0A4571F; };
+		B5B818C6DEA816310CAA3067 /* ConditionsView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 790FD481F19CBD85634FB635; };
+		2833424211D23E9A84172159 /* MuscleAnatomyGeometry.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 631E537DBD3306C35FA92E32; };
+		A27CCBA1BAF7F6EEC1806B51 /* MuscleAnatomyView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = CD0FC3809552F620E15119D2; };
+		39F69D9B8E11792D59C161DE /* MuscleAtlasExplorer.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 4B3B12B2A00329F0482A01E4; };
+		615E98598D8299257ACA73DF /* WeeklyMuscleMapView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = ECCD4C0B546C3649D95DAAB4; };
+		909477AE2D6516A712F43172 /* AnatomicalTargetPicker.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = FAF8967A2C1CCFCBEF95BE51; };
+		57EE6DE4AABCF2C10C846770 /* ExercisePickerView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 144F7C8783C70CE35619DCAA; };
+		7D71DAED1AAB58EDA7CDA4A4 /* ExerciseSetupView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 7045B41F66BD06D313266B47; };
+		C432E2E8416952621CECB957 /* SessionBuilderView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 088CC30E0F8064F20899C568; };
+		9AC0728BDDF5A0641D75E58B /* TrainingCalendarView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = B3E21CA185C7365598026C81; };
+		A5ABF9D83B5369E87906F1D6 /* InsightsView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 70E933555EC573A50F8DE57F; };
+		707F48A033D4706985953486 /* FoodSearchView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = A3D011402059BBD8E1919C7D; };
+		35CDF903061302F58077B864 /* MealEditorView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 2D97DA32B7B41ABCC4E344E3; };
+		019CC560594EF0F5D86CCCFA /* NutritionView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 38661B6BDAF477592C94FC39; };
+		2A093CDCCC793340EC6B54AC /* SunExposureSheet.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = F5D4A47301BAF92ACBDCA9F2; };
+		9D10B56277841A7A0ACFE927 /* SupplementsView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 52B2C06ED418B78D06245196; };
+		C1EC958718006EF79D4246B0 /* OnboardingView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 0091F58EA813B0C05A5E302F; };
+		01B2FC42E6C343EDB4E7D3EA /* RootTabView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = AA3F3BF2D907E1810568A0FD; };
+		642B8468D2C02110201130A1 /* ActiveSessionView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = DF03194E7551FECF53DB108C; };
+		36B11DC1C3F94265B235155D /* SessionSummaryView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 56EB7F3FE973D0656C12C2AF; };
+		CB6C607DED4C8A9FFB55DB63 /* SettingsView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = BFC9FA10FDD017B71F145B1E; };
+		78489BAE22E0F6C97D97C029 /* StreakView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = 43C606210E1D5E1FD821C1DA; };
+		EF497D0FAAD89550FC0FA8DF /* TodayView.swift in Sources-app */ = {isa = PBXBuildFile; fileRef = EAE16C9C2E6CBE6CD911687C; };
+		395E1A7449290ABA3667B0B9 /* Enums.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = 971599F17A8DE90F19671563; };
+		61DDEA7FB38667D5F284081B /* Nutrition.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = 6C165AB4B88B6A962AFB558B; };
+		3C6817F8A88D1C8912E3B08C /* Profile.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = D5B7ACFF740677008138DD90; };
+		0033FC8178648F6AFCEE2D6B /* Training.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = B72357C1ACAA9CDAEB8C92F9; };
+		06CC4CB1E867777EC44AA625 /* AuthConfig.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = 27E374378B6C9BE9765772D1; };
+		769C9368568EB8DDC00F1CF3 /* BackupPayload.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = 80B621B66CDD28D340A35246; };
+		9A4501CA0C5B8D5184E404E1 /* BodyCompositionAnalyzer.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = C83FFB79AB44DA3E334D956D; };
+		3135CAFF8C4F616CD1D1C57F /* CatalogStore.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = 4FAFE78C217B6EF31E92F995; };
+		A3D69ABAA9914C852A827851 /* ConditionAdvisor.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = 87297292CEC3F1C6BBED2097; };
+		0465F7EC9AC6842C3AAE58C3 /* EnergyCalculator.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = 5D52D09D00902571DA2AC525; };
+		DB67220AF6DC655204B12E2E /* ExerciseCatalogService.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = DC82A508B024AB2CF38A72BF; };
+		714AF8A04291E94719CB73C2 /* FirebaseAuthClient.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = 7B51C097C8B8407A945F6F20; };
+		E675053E3671B3CD1DCAF2EA /* FirebaseConfig.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = B3DF26E6D7BDB495702EBE99; };
+		6842793B58900C1B71686972 /* FirestoreClient.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = 0B140D59FB15D7D4702698E1; };
+		E92D982D79C6FFA98931693C /* FoodDatabaseService.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = E2C65F3A3DD01310D542FA85; };
+		607FF5C74B77812BC82041E6 /* HydrationAdvisor.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = 23125608ED85FC030E9AD10D; };
+		7B1859476634C2E96814DF0A /* HydrationIntent.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = 358B5493B3A42D6701259A9C; };
+		D79033AF3DB595C20AFB6B12 /* Keychain.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = C63BBA771D91A126C4FC8078; };
+		7391133E843C69C30B230829 /* LocationActivityService.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = 4F7AA51C4C3AC28CFFF02DF1; };
+		5B01E466ECBF0FD80E2FC074 /* MuscleBalanceAnalyzer.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = A822CF041BA16945B77B2FC6; };
+		B4E1E683C3047509F8E7EC80 /* SharedStore.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = 0013675E7E109D8A8F0F07C7; };
+		B7F616055944090AE205AD35 /* StreakCalculator.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = CA4854774016BE0F10495AA6; };
+		3C833D0550859638F946269B /* WeatherService.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = 861C168F0EA593F96BB033DA; };
+		23B0852879732A467D9BADAC /* WeatherStore.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = 7D2138701D906F2357E0133A; };
+		02B3370373E1CEB8D9683A8A /* WidgetData.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = 6909886609B626092068DDF0; };
+		372706C880720DB491C4B9A7 /* AppRouter.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = AAA78DF6CA2E4BC5F8BDD20C; };
+		AC44CAF7DD259471CD5CA30E /* Components.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = DA9D3DCFA362AD806F9A2F17; };
+		B19004F30B2DABC273F3AFBC /* Formatting.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = 9E6ECE9DAAC88F471837501A; };
+		DE6B4C021E2EBCA5D7793628 /* HydrationWidget.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = BE1FBBAA10A9F08FCE5A4406; };
+		D045863424714421DCCF795B /* MufitWidgets.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = 62877B244819DEDCC493FDDF; };
+		147AF094CA434E2932A3D6B1 /* NutritionWidget.swift in Sources-widget */ = {isa = PBXBuildFile; fileRef = EB79FFC3BF5C53A6044F69DA; };
+		9920E2A628ECB1CFF306E9D1 /* seed_exercises.json in Resources-app */ = {isa = PBXBuildFile; fileRef = FA5865A8F468280C5C89EF70; };
+		D4209A1DBE19254AE6D6BB07 /* seed_foods.json in Resources-app */ = {isa = PBXBuildFile; fileRef = 0710B17686C13A517BEA1F30; };
+		D5DF1C7694367F857A218A90 /* Assets.xcassets in Resources-app */ = {isa = PBXBuildFile; fileRef = 9DC4609F2A9458C8A5803B09; };
+		2E39B0659472761A7F69BDA5 /* MufitUITests.swift in Sources-tests */ = {isa = PBXBuildFile; fileRef = 6E3871220F04249D5654393E; };
+		613088DC14B73BB77ADF89C0 /* FitCoreWidgets.appex in Embed */ = {isa = PBXBuildFile; fileRef = 405FA45B4B72A05E3B45660C; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC6037DBF2224EBBAED1C2D3 = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F54143AB4E86B28C3AFEE0;
+			proxyType = 1;
+			remoteGlobalIDString = 3B1689025F28FC4C8DE1FFA9;
+			remoteInfo = MufitWidgets;
+		};
+		8B77F2BCC7FC76C097712C2D = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F54143AB4E86B28C3AFEE0;
+			proxyType = 1;
+			remoteGlobalIDString = 28B8386B3695838564AC07AE;
+			remoteInfo = Mufit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3CBB55013495CF6C8C900900 = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613088DC14B73BB77ADF89C0 /* MufitWidgets.appex */,
+			);
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		971599F17A8DE90F19671563 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enums.swift"; sourceTree = "<group>"; };
+		6C165AB4B88B6A962AFB558B /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nutrition.swift"; sourceTree = "<group>"; };
+		D5B7ACFF740677008138DD90 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile.swift"; sourceTree = "<group>"; };
+		B72357C1ACAA9CDAEB8C92F9 /* Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Training.swift"; sourceTree = "<group>"; };
+		27E374378B6C9BE9765772D1 /* AuthConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthConfig.swift"; sourceTree = "<group>"; };
+		EA7FE873D268C1B101E9D97C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthService.swift"; sourceTree = "<group>"; };
+		80B621B66CDD28D340A35246 /* BackupPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BackupPayload.swift"; sourceTree = "<group>"; };
+		C83FFB79AB44DA3E334D956D /* BodyCompositionAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BodyCompositionAnalyzer.swift"; sourceTree = "<group>"; };
+		4FAFE78C217B6EF31E92F995 /* CatalogStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CatalogStore.swift"; sourceTree = "<group>"; };
+		87297292CEC3F1C6BBED2097 /* ConditionAdvisor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConditionAdvisor.swift"; sourceTree = "<group>"; };
+		5D52D09D00902571DA2AC525 /* EnergyCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnergyCalculator.swift"; sourceTree = "<group>"; };
+		DC82A508B024AB2CF38A72BF /* ExerciseCatalogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseCatalogService.swift"; sourceTree = "<group>"; };
+		7B51C097C8B8407A945F6F20 /* FirebaseAuthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirebaseAuthClient.swift"; sourceTree = "<group>"; };
+		B3DF26E6D7BDB495702EBE99 /* FirebaseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirebaseConfig.swift"; sourceTree = "<group>"; };
+		0B140D59FB15D7D4702698E1 /* FirestoreClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirestoreClient.swift"; sourceTree = "<group>"; };
+		E2C65F3A3DD01310D542FA85 /* FoodDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodDatabaseService.swift"; sourceTree = "<group>"; };
+		23125608ED85FC030E9AD10D /* HydrationAdvisor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HydrationAdvisor.swift"; sourceTree = "<group>"; };
+		358B5493B3A42D6701259A9C /* HydrationIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HydrationIntent.swift"; sourceTree = "<group>"; };
+		C63BBA771D91A126C4FC8078 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keychain.swift"; sourceTree = "<group>"; };
+		4F7AA51C4C3AC28CFFF02DF1 /* LocationActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationActivityService.swift"; sourceTree = "<group>"; };
+		A822CF041BA16945B77B2FC6 /* MuscleBalanceAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MuscleBalanceAnalyzer.swift"; sourceTree = "<group>"; };
+		0013675E7E109D8A8F0F07C7 /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SharedStore.swift"; sourceTree = "<group>"; };
+		CA4854774016BE0F10495AA6 /* StreakCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StreakCalculator.swift"; sourceTree = "<group>"; };
+		861C168F0EA593F96BB033DA /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherService.swift"; sourceTree = "<group>"; };
+		7D2138701D906F2357E0133A /* WeatherStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherStore.swift"; sourceTree = "<group>"; };
+		6909886609B626092068DDF0 /* WidgetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WidgetData.swift"; sourceTree = "<group>"; };
+		AAA78DF6CA2E4BC5F8BDD20C /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppRouter.swift"; sourceTree = "<group>"; };
+		DA9D3DCFA362AD806F9A2F17 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Components.swift"; sourceTree = "<group>"; };
+		9E6ECE9DAAC88F471837501A /* Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatting.swift"; sourceTree = "<group>"; };
+		4D536C7B1BB9AADCE3812ABB /* MufitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MufitApp.swift"; sourceTree = "<group>"; };
+		412FEE9DB7BCF4A441D2EF65 /* AdviceEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AdviceEngine.swift"; sourceTree = "<group>"; };
+		AF8ECA51B56908FDEDA2FBDB /* AnatomicalMuscle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnatomicalMuscle.swift"; sourceTree = "<group>"; };
+		0E2BAB79B723202DDE3A8081 /* AnatomicalTrainingTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnatomicalTrainingTracker.swift"; sourceTree = "<group>"; };
+		3F0C4746036444EC391CA38F /* MuscleTrainingGuidance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MuscleTrainingGuidance.swift"; sourceTree = "<group>"; };
+		4C9C19D88F7E67CB0394B47D /* SyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SyncService.swift"; sourceTree = "<group>"; };
+		3CDD2A1B3CE7590C763D4998 /* WeeklyMuscleTracker+Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeeklyMuscleTracker+Models.swift"; sourceTree = "<group>"; };
+		FA4C4E9E833AE552D71CC428 /* WeeklyMuscleTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeeklyMuscleTracker.swift"; sourceTree = "<group>"; };
+		215CE3862DE0BB0C54ED1581 /* WorkoutDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutDraft.swift"; sourceTree = "<group>"; };
+		5D6D90F7B95D61DD928D08FC /* BrandLogos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BrandLogos.swift"; sourceTree = "<group>"; };
+		6AD310F331D8E1FF18761B70 /* LaunchGateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LaunchGateView.swift"; sourceTree = "<group>"; };
+		7FA236E6507BE7545E33FF5E /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInView.swift"; sourceTree = "<group>"; };
+		D0530257FD0D8B5D8D47FB73 /* AddMeasurementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddMeasurementView.swift"; sourceTree = "<group>"; };
+		CB89E3E022B5E8075FB82A16 /* BodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BodyView.swift"; sourceTree = "<group>"; };
+		304106EAECC01AFBE0A4571F /* ConditionGuidanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConditionGuidanceView.swift"; sourceTree = "<group>"; };
+		790FD481F19CBD85634FB635 /* ConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConditionsView.swift"; sourceTree = "<group>"; };
+		631E537DBD3306C35FA92E32 /* MuscleAnatomyGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MuscleAnatomyGeometry.swift"; sourceTree = "<group>"; };
+		CD0FC3809552F620E15119D2 /* MuscleAnatomyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MuscleAnatomyView.swift"; sourceTree = "<group>"; };
+		4B3B12B2A00329F0482A01E4 /* MuscleAtlasExplorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MuscleAtlasExplorer.swift"; sourceTree = "<group>"; };
+		ECCD4C0B546C3649D95DAAB4 /* WeeklyMuscleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeeklyMuscleMapView.swift"; sourceTree = "<group>"; };
+		FAF8967A2C1CCFCBEF95BE51 /* AnatomicalTargetPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnatomicalTargetPicker.swift"; sourceTree = "<group>"; };
+		144F7C8783C70CE35619DCAA /* ExercisePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExercisePickerView.swift"; sourceTree = "<group>"; };
+		7045B41F66BD06D313266B47 /* ExerciseSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseSetupView.swift"; sourceTree = "<group>"; };
+		088CC30E0F8064F20899C568 /* SessionBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SessionBuilderView.swift"; sourceTree = "<group>"; };
+		B3E21CA185C7365598026C81 /* TrainingCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingCalendarView.swift"; sourceTree = "<group>"; };
+		70E933555EC573A50F8DE57F /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InsightsView.swift"; sourceTree = "<group>"; };
+		A3D011402059BBD8E1919C7D /* FoodSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodSearchView.swift"; sourceTree = "<group>"; };
+		2D97DA32B7B41ABCC4E344E3 /* MealEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealEditorView.swift"; sourceTree = "<group>"; };
+		38661B6BDAF477592C94FC39 /* NutritionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NutritionView.swift"; sourceTree = "<group>"; };
+		F5D4A47301BAF92ACBDCA9F2 /* SunExposureSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SunExposureSheet.swift"; sourceTree = "<group>"; };
+		52B2C06ED418B78D06245196 /* SupplementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SupplementsView.swift"; sourceTree = "<group>"; };
+		0091F58EA813B0C05A5E302F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingView.swift"; sourceTree = "<group>"; };
+		AA3F3BF2D907E1810568A0FD /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootTabView.swift"; sourceTree = "<group>"; };
+		DF03194E7551FECF53DB108C /* ActiveSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActiveSessionView.swift"; sourceTree = "<group>"; };
+		56EB7F3FE973D0656C12C2AF /* SessionSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SessionSummaryView.swift"; sourceTree = "<group>"; };
+		BFC9FA10FDD017B71F145B1E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsView.swift"; sourceTree = "<group>"; };
+		43C606210E1D5E1FD821C1DA /* StreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StreakView.swift"; sourceTree = "<group>"; };
+		EAE16C9C2E6CBE6CD911687C /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodayView.swift"; sourceTree = "<group>"; };
+		BE1FBBAA10A9F08FCE5A4406 /* HydrationWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HydrationWidget.swift"; sourceTree = "<group>"; };
+		62877B244819DEDCC493FDDF /* MufitWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MufitWidgets.swift"; sourceTree = "<group>"; };
+		EB79FFC3BF5C53A6044F69DA /* NutritionWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NutritionWidget.swift"; sourceTree = "<group>"; };
+		6E3871220F04249D5654393E /* MufitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MufitUITests.swift"; sourceTree = "<group>"; };
+		FA5865A8F468280C5C89EF70 /* seed_exercises.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "seed_exercises.json"; sourceTree = "<group>"; };
+		0710B17686C13A517BEA1F30 /* seed_foods.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "seed_foods.json"; sourceTree = "<group>"; };
+		9DC4609F2A9458C8A5803B09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets.xcassets"; sourceTree = "<group>"; };
+		EF33442361C3CEF13348C519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info.plist"; sourceTree = "<group>"; };
+		665F9C42C24682E61651A7C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info.plist"; sourceTree = "<group>"; };
+		43B036FACD5ACF51A38C0E04 /* Mufit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Mufit.entitlements"; sourceTree = "<group>"; };
+		938D9A5FEED335F4E839F26F /* MufitWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MufitWidgets.entitlements"; sourceTree = "<group>"; };
+		9F358B13F44DE59E1E33F607 /* Mufit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mufit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		405FA45B4B72A05E3B45660C /* MufitWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MufitWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5646FC5AEB061B3CF28E87C /* MufitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MufitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9524FBAE97453D00956E388F = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B5186F8607BB9F5C7A135BC = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081A12E8FDD25F366627CFCF = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82CCE7724EB486B0CE6EF891 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				971599F17A8DE90F19671563 /* Enums.swift */,
+				6C165AB4B88B6A962AFB558B /* Nutrition.swift */,
+				D5B7ACFF740677008138DD90 /* Profile.swift */,
+				B72357C1ACAA9CDAEB8C92F9 /* Training.swift */,
+			);
+			path = "Models";
+			sourceTree = "<group>";
+		};
+		C4FB87A62E34F398EC689908 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA5865A8F468280C5C89EF70 /* seed_exercises.json */,
+				0710B17686C13A517BEA1F30 /* seed_foods.json */,
+			);
+			path = "Resources";
+			sourceTree = "<group>";
+		};
+		F6290B0829DE15459F9075AE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				27E374378B6C9BE9765772D1 /* AuthConfig.swift */,
+				EA7FE873D268C1B101E9D97C /* AuthService.swift */,
+				80B621B66CDD28D340A35246 /* BackupPayload.swift */,
+				C83FFB79AB44DA3E334D956D /* BodyCompositionAnalyzer.swift */,
+				4FAFE78C217B6EF31E92F995 /* CatalogStore.swift */,
+				87297292CEC3F1C6BBED2097 /* ConditionAdvisor.swift */,
+				5D52D09D00902571DA2AC525 /* EnergyCalculator.swift */,
+				DC82A508B024AB2CF38A72BF /* ExerciseCatalogService.swift */,
+				7B51C097C8B8407A945F6F20 /* FirebaseAuthClient.swift */,
+				B3DF26E6D7BDB495702EBE99 /* FirebaseConfig.swift */,
+				0B140D59FB15D7D4702698E1 /* FirestoreClient.swift */,
+				E2C65F3A3DD01310D542FA85 /* FoodDatabaseService.swift */,
+				23125608ED85FC030E9AD10D /* HydrationAdvisor.swift */,
+				358B5493B3A42D6701259A9C /* HydrationIntent.swift */,
+				C63BBA771D91A126C4FC8078 /* Keychain.swift */,
+				4F7AA51C4C3AC28CFFF02DF1 /* LocationActivityService.swift */,
+				A822CF041BA16945B77B2FC6 /* MuscleBalanceAnalyzer.swift */,
+				0013675E7E109D8A8F0F07C7 /* SharedStore.swift */,
+				CA4854774016BE0F10495AA6 /* StreakCalculator.swift */,
+				861C168F0EA593F96BB033DA /* WeatherService.swift */,
+				7D2138701D906F2357E0133A /* WeatherStore.swift */,
+				6909886609B626092068DDF0 /* WidgetData.swift */,
+			);
+			path = "Services";
+			sourceTree = "<group>";
+		};
+		940F3CFE9BBF9541AA51EF2C /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				AAA78DF6CA2E4BC5F8BDD20C /* AppRouter.swift */,
+				DA9D3DCFA362AD806F9A2F17 /* Components.swift */,
+				9E6ECE9DAAC88F471837501A /* Formatting.swift */,
+			);
+			path = "Support";
+			sourceTree = "<group>";
+		};
+		8EA65C603DA123B5B8F1B5EA /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				82CCE7724EB486B0CE6EF891 /* Models */,
+				C4FB87A62E34F398EC689908 /* Resources */,
+				F6290B0829DE15459F9075AE /* Services */,
+				940F3CFE9BBF9541AA51EF2C /* Support */,
+			);
+			path = "Shared";
+			sourceTree = "<group>";
+		};
+		1E60E1A9F07194353AD56B67 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				412FEE9DB7BCF4A441D2EF65 /* AdviceEngine.swift */,
+				AF8ECA51B56908FDEDA2FBDB /* AnatomicalMuscle.swift */,
+				0E2BAB79B723202DDE3A8081 /* AnatomicalTrainingTracker.swift */,
+				3F0C4746036444EC391CA38F /* MuscleTrainingGuidance.swift */,
+				4C9C19D88F7E67CB0394B47D /* SyncService.swift */,
+				3CDD2A1B3CE7590C763D4998 /* WeeklyMuscleTracker+Models.swift */,
+				FA4C4E9E833AE552D71CC428 /* WeeklyMuscleTracker.swift */,
+				215CE3862DE0BB0C54ED1581 /* WorkoutDraft.swift */,
+			);
+			path = "Services";
+			sourceTree = "<group>";
+		};
+		04275E2BE1CBC20EAF1AFC25 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				5D6D90F7B95D61DD928D08FC /* BrandLogos.swift */,
+				6AD310F331D8E1FF18761B70 /* LaunchGateView.swift */,
+				7FA236E6507BE7545E33FF5E /* SignInView.swift */,
+			);
+			path = "Auth";
+			sourceTree = "<group>";
+		};
+		F19DDE2DB6AFC5417D64D3BB /* Body */ = {
+			isa = PBXGroup;
+			children = (
+				D0530257FD0D8B5D8D47FB73 /* AddMeasurementView.swift */,
+				CB89E3E022B5E8075FB82A16 /* BodyView.swift */,
+				304106EAECC01AFBE0A4571F /* ConditionGuidanceView.swift */,
+				790FD481F19CBD85634FB635 /* ConditionsView.swift */,
+				631E537DBD3306C35FA92E32 /* MuscleAnatomyGeometry.swift */,
+				CD0FC3809552F620E15119D2 /* MuscleAnatomyView.swift */,
+				4B3B12B2A00329F0482A01E4 /* MuscleAtlasExplorer.swift */,
+				ECCD4C0B546C3649D95DAAB4 /* WeeklyMuscleMapView.swift */,
+			);
+			path = "Body";
+			sourceTree = "<group>";
+		};
+		58D3257EAC1D29367CA0AFC1 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				FAF8967A2C1CCFCBEF95BE51 /* AnatomicalTargetPicker.swift */,
+				144F7C8783C70CE35619DCAA /* ExercisePickerView.swift */,
+				7045B41F66BD06D313266B47 /* ExerciseSetupView.swift */,
+				088CC30E0F8064F20899C568 /* SessionBuilderView.swift */,
+				B3E21CA185C7365598026C81 /* TrainingCalendarView.swift */,
+			);
+			path = "Calendar";
+			sourceTree = "<group>";
+		};
+		3FA6782ACEEE5F71515779F9 /* Insights */ = {
+			isa = PBXGroup;
+			children = (
+				70E933555EC573A50F8DE57F /* InsightsView.swift */,
+			);
+			path = "Insights";
+			sourceTree = "<group>";
+		};
+		2A7F8B5387ECB4D9FF82B9EA /* Nutrition */ = {
+			isa = PBXGroup;
+			children = (
+				A3D011402059BBD8E1919C7D /* FoodSearchView.swift */,
+				2D97DA32B7B41ABCC4E344E3 /* MealEditorView.swift */,
+				38661B6BDAF477592C94FC39 /* NutritionView.swift */,
+				F5D4A47301BAF92ACBDCA9F2 /* SunExposureSheet.swift */,
+				52B2C06ED418B78D06245196 /* SupplementsView.swift */,
+			);
+			path = "Nutrition";
+			sourceTree = "<group>";
+		};
+		AEC565E0D904DD718AC937B5 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				0091F58EA813B0C05A5E302F /* OnboardingView.swift */,
+			);
+			path = "Onboarding";
+			sourceTree = "<group>";
+		};
+		E84A6B628984207D93837347 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				DF03194E7551FECF53DB108C /* ActiveSessionView.swift */,
+				56EB7F3FE973D0656C12C2AF /* SessionSummaryView.swift */,
+			);
+			path = "Session";
+			sourceTree = "<group>";
+		};
+		62148E027F5252D9B41C4B51 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				BFC9FA10FDD017B71F145B1E /* SettingsView.swift */,
+			);
+			path = "Settings";
+			sourceTree = "<group>";
+		};
+		81D5C32170550D101DAF50CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04275E2BE1CBC20EAF1AFC25 /* Auth */,
+				F19DDE2DB6AFC5417D64D3BB /* Body */,
+				58D3257EAC1D29367CA0AFC1 /* Calendar */,
+				3FA6782ACEEE5F71515779F9 /* Insights */,
+				2A7F8B5387ECB4D9FF82B9EA /* Nutrition */,
+				AEC565E0D904DD718AC937B5 /* Onboarding */,
+				E84A6B628984207D93837347 /* Session */,
+				62148E027F5252D9B41C4B51 /* Settings */,
+				AA3F3BF2D907E1810568A0FD /* RootTabView.swift */,
+				43C606210E1D5E1FD821C1DA /* StreakView.swift */,
+				EAE16C9C2E6CBE6CD911687C /* TodayView.swift */,
+			);
+			path = "Views";
+			sourceTree = "<group>";
+		};
+		6848D4F71A85F094641ACD18 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1E60E1A9F07194353AD56B67 /* Services */,
+				81D5C32170550D101DAF50CA /* Views */,
+				9DC4609F2A9458C8A5803B09 /* Assets.xcassets */,
+				EF33442361C3CEF13348C519 /* Info.plist */,
+				43B036FACD5ACF51A38C0E04 /* Mufit.entitlements */,
+				4D536C7B1BB9AADCE3812ABB /* MufitApp.swift */,
+			);
+			path = "App";
+			sourceTree = "<group>";
+		};
+		C16B1ED880FF43987CC65CBB /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				BE1FBBAA10A9F08FCE5A4406 /* HydrationWidget.swift */,
+				665F9C42C24682E61651A7C6 /* Info.plist */,
+				938D9A5FEED335F4E839F26F /* MufitWidgets.entitlements */,
+				62877B244819DEDCC493FDDF /* MufitWidgets.swift */,
+				EB79FFC3BF5C53A6044F69DA /* NutritionWidget.swift */,
+			);
+			path = "Widgets";
+			sourceTree = "<group>";
+		};
+		070137D6C95FFDB8F2768F63 /* MufitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6E3871220F04249D5654393E /* MufitUITests.swift */,
+			);
+			path = "MufitUITests";
+			sourceTree = "<group>";
+		};
+		B40202C75D4FB44D8C59CFA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F358B13F44DE59E1E33F607 /* Mufit.app */,
+				405FA45B4B72A05E3B45660C /* MufitWidgets.appex */,
+				B5646FC5AEB061B3CF28E87C /* MufitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C54F0470E2253EA01E96383 = {
+			isa = PBXGroup;
+			children = (
+				8EA65C603DA123B5B8F1B5EA /* Shared */,
+				6848D4F71A85F094641ACD18 /* App */,
+				C16B1ED880FF43987CC65CBB /* Widgets */,
+				070137D6C95FFDB8F2768F63 /* MufitUITests */,
+				B40202C75D4FB44D8C59CFA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28B8386B3695838564AC07AE /* FitCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE00E44D1CF6E2E3FA93958F;
+			buildPhases = (
+				891D838C26561BBEE5C4203A /* Sources */,
+				9524FBAE97453D00956E388F /* Frameworks */,
+				5F52D7B13DD796A4E71B8B54 /* Resources */,
+				3CBB55013495CF6C8C900900 /* Embed Foundation Extensions */,
+			);
+			buildRules = ();
+			dependencies = (
+				AD65BFD2924656A8E134393A /* PBXTargetDependency */,
+			);
+			name = Mufit;
+			productName = Mufit;
+			productReference = 9F358B13F44DE59E1E33F607;
+			productType = "com.apple.product-type.application";
+		};
+		3B1689025F28FC4C8DE1FFA9 /* FitCoreWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B0D3B4086B17048DB74CEF;
+			buildPhases = (
+				ED092DA06DF24C26E6AFFB36 /* Sources */,
+				8B5186F8607BB9F5C7A135BC /* Frameworks */,
+				3BE0F74534503FC3D4514965 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = MufitWidgets;
+			productName = MufitWidgets;
+			productReference = 405FA45B4B72A05E3B45660C;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E6AC3C44E4B1974615EB067A /* MufitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9263652794F1193DB1D92CC7;
+			buildPhases = (
+				DFC7C17C7E2B0935BBF25C52 /* Sources */,
+				081A12E8FDD25F366627CFCF /* Frameworks */,
+				A3BE7FB077327136F7FF9800 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = (
+				E6117070B69D84A5465152AE /* PBXTargetDependency */,
+			);
+			name = MufitUITests;
+			productName = MufitUITests;
+			productReference = B5646FC5AEB061B3CF28E87C;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98F54143AB4E86B28C3AFEE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					28B8386B3695838564AC07AE = { CreatedOnToolsVersion = 26.6; };
+					3B1689025F28FC4C8DE1FFA9 = { CreatedOnToolsVersion = 26.6; };
+					E6AC3C44E4B1974615EB067A = { CreatedOnToolsVersion = 27.0; TestTargetID = 28B8386B3695838564AC07AE; };
+				};
+			};
+			buildConfigurationList = EA14EA6A43D4399E6D2CE974;
+			developmentRegion = vi;
+			hasScannedForEncodings = 0;
+			knownRegions = ( vi, Base, );
+			mainGroup = 0C54F0470E2253EA01E96383;
+			productRefGroup = B40202C75D4FB44D8C59CFA5;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28B8386B3695838564AC07AE /* Mufit */,
+				3B1689025F28FC4C8DE1FFA9 /* MufitWidgets */,
+				E6AC3C44E4B1974615EB067A /* MufitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F52D7B13DD796A4E71B8B54 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9920E2A628ECB1CFF306E9D1,
+				D4209A1DBE19254AE6D6BB07,
+				D5DF1C7694367F857A218A90,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BE0F74534503FC3D4514965 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3BE7FB077327136F7FF9800 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		891D838C26561BBEE5C4203A = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE767B65FAF19B4913DD945,
+				D5D360E11461D5584E0929D0,
+				E65C71B1ED1535AEEECE4FB9,
+				6FBEA8DB9912990C956B2BA5,
+				A21C828B809B14412A330DBE,
+				26413F21D1CFE0418092EAD8,
+				0F256CEBC6F9C79C31D4867A,
+				83E3A708BE9F7A4720DD468B,
+				D6844EE3733C64D03CF09424,
+				3B87696989FA6BDD43A0C6F0,
+				6C75D9F6E6C3F5F9E9A53F98,
+				FFEDCB999E7D85F76280B07F,
+				47B073FBB71EE87137CC5BDE,
+				762C4FE763AE481AC953E6D5,
+				5D00EE42A1D6F25E243839AB,
+				70A8748320DE3A1AB3E9E066,
+				BC67EC3DADFD04D4CE188F0F,
+				13A9047E38A84071F0350CBF,
+				E7D7E33445CCE1BEA359E8AE,
+				60441C153AD504463C9AA6EC,
+				2445F4D5A6781C0F1084FE93,
+				3551E4743AD466B0DB5F2A39,
+				31CE3B87A74BCA4FE679BF72,
+				6D150EE955CE5F189368B420,
+				698A77C719CBD1EA2EAE0A2D,
+				6AD2D7FCA62605450D7D969D,
+				71A18045289882636C02E23A,
+				0D9F35B7169073335495C81E,
+				70701F7F6E350BF2FBAF4695,
+				4D91CF22F74D113428FF1190,
+				CE76EF7CBD6F71CD6F573AA9,
+				8D0A3AF7E56EDCF376CD83FB,
+				2C4ACE978BECC99CCA298D01,
+				FCB7EB1DB3FF19F06FD5CB2F,
+				AFB7A66B286854296EDDE7C1,
+				915B08F3143AA225C00DE20E,
+				DC3454B519FE1257AFF82D0C,
+				DEAE3318C371729701A90F3C,
+				F794F5379756CB09383304D4,
+				C6B4900B1C7196F1A3223555,
+				1EC66B4088F31E046FA37C24,
+				BDB170349C2B358563DF2D0B,
+				5B2C95981FF16F7E3504E521,
+				AFE4060275ED20AE7637CFD1,
+				B5B818C6DEA816310CAA3067,
+				2833424211D23E9A84172159,
+				A27CCBA1BAF7F6EEC1806B51,
+				39F69D9B8E11792D59C161DE,
+				615E98598D8299257ACA73DF,
+				909477AE2D6516A712F43172,
+				57EE6DE4AABCF2C10C846770,
+				7D71DAED1AAB58EDA7CDA4A4,
+				C432E2E8416952621CECB957,
+				9AC0728BDDF5A0641D75E58B,
+				A5ABF9D83B5369E87906F1D6,
+				707F48A033D4706985953486,
+				35CDF903061302F58077B864,
+				019CC560594EF0F5D86CCCFA,
+				2A093CDCCC793340EC6B54AC,
+				9D10B56277841A7A0ACFE927,
+				C1EC958718006EF79D4246B0,
+				01B2FC42E6C343EDB4E7D3EA,
+				642B8468D2C02110201130A1,
+				36B11DC1C3F94265B235155D,
+				CB6C607DED4C8A9FFB55DB63,
+				78489BAE22E0F6C97D97C029,
+				EF497D0FAAD89550FC0FA8DF,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED092DA06DF24C26E6AFFB36 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395E1A7449290ABA3667B0B9,
+				61DDEA7FB38667D5F284081B,
+				3C6817F8A88D1C8912E3B08C,
+				0033FC8178648F6AFCEE2D6B,
+				06CC4CB1E867777EC44AA625,
+				769C9368568EB8DDC00F1CF3,
+				9A4501CA0C5B8D5184E404E1,
+				3135CAFF8C4F616CD1D1C57F,
+				A3D69ABAA9914C852A827851,
+				0465F7EC9AC6842C3AAE58C3,
+				DB67220AF6DC655204B12E2E,
+				714AF8A04291E94719CB73C2,
+				E675053E3671B3CD1DCAF2EA,
+				6842793B58900C1B71686972,
+				E92D982D79C6FFA98931693C,
+				607FF5C74B77812BC82041E6,
+				7B1859476634C2E96814DF0A,
+				D79033AF3DB595C20AFB6B12,
+				7391133E843C69C30B230829,
+				5B01E466ECBF0FD80E2FC074,
+				B4E1E683C3047509F8E7EC80,
+				B7F616055944090AE205AD35,
+				3C833D0550859638F946269B,
+				23B0852879732A467D9BADAC,
+				02B3370373E1CEB8D9683A8A,
+				372706C880720DB491C4B9A7,
+				AC44CAF7DD259471CD5CA30E,
+				B19004F30B2DABC273F3AFBC,
+				DE6B4C021E2EBCA5D7793628,
+				D045863424714421DCCF795B,
+				147AF094CA434E2932A3D6B1,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC7C17C7E2B0935BBF25C52 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E39B0659472761A7F69BDA5,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD65BFD2924656A8E134393A = {
+			isa = PBXTargetDependency;
+			target = 3B1689025F28FC4C8DE1FFA9;
+			targetProxy = CC6037DBF2224EBBAED1C2D3;
+		};
+		E6117070B69D84A5465152AE = {
+			isa = PBXTargetDependency;
+			target = 28B8386B3695838564AC07AE;
+			targetProxy = 8B77F2BCC7FC76C097712C2D;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		62C0502E9DD2F4A0E153A290 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)");
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1076DB52F6D567F23A74575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		754064D2901B6752E802BA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "App/Mufit.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "App/Info.plist";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muoi.fitcore;
+				PRODUCT_NAME = "Mufit";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+			};
+			name = Debug;
+		};
+		831F0B0E7AD0243B76867D45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "App/Mufit.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "App/Info.plist";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muoi.fitcore;
+				PRODUCT_NAME = "Mufit";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+			};
+			name = Release;
+		};
+		2101F54BEA7A94388ACBD4F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Widgets/MufitWidgets.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Widgets/Info.plist";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muoi.fitcore.widgets;
+				PRODUCT_NAME = "MufitWidgets";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FDA8D4FD9276B684E6E4C2E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Widgets/MufitWidgets.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Widgets/Info.plist";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muoi.fitcore.widgets;
+				PRODUCT_NAME = "MufitWidgets";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E8A7D59B347239969BCF4442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muoi.MufitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mufit;
+			};
+			name = Debug;
+		};
+		FB77EFCD69769151259EA1DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muoi.MufitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mufit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA14EA6A43D4399E6D2CE974 /* Build configuration list for PBXProject "Mufit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62C0502E9DD2F4A0E153A290 /* Debug */,
+				A1076DB52F6D567F23A74575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE00E44D1CF6E2E3FA93958F /* Build configuration list for PBXNativeTarget "Mufit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754064D2901B6752E802BA06 /* Debug */,
+				831F0B0E7AD0243B76867D45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B0D3B4086B17048DB74CEF /* Build configuration list for PBXNativeTarget "MufitWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2101F54BEA7A94388ACBD4F4 /* Debug */,
+				FDA8D4FD9276B684E6E4C2E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9263652794F1193DB1D92CC7 /* Build configuration list for PBXNativeTarget "MufitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8A7D59B347239969BCF4442 /* Debug */,
+				FB77EFCD69769151259EA1DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98F54143AB4E86B28C3AFEE0;
+}
