@@ -25,6 +25,7 @@ struct SunExposureSheet: View {
                     Text("App thấy bạn đã di chuyển \(Int(location.distanceTodayMeters)) m hôm nay. Bạn có ở ngoài trời không?")
                         .font(.subheadline)
                     Toggle("Có ra ngoài trời", isOn: $wasOutdoor)
+                        .tint(IconPalette.training)
                 }
 
                 if wasOutdoor {

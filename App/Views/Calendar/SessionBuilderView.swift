@@ -107,6 +107,7 @@ struct SessionBuilderView: View {
                         Toggle(isOn: $repeatWeekly) {
                             Text("Lặp vào \(Fmt.weekdayName(sessionDate)) hàng tuần")
                         }
+                        .tint(IconPalette.training)
                         if repeatWeekly {
                             Picker("Lặp trong", selection: $repeatWeeks) {
                                 Text("4 tuần").tag(4)

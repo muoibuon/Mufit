@@ -63,13 +63,8 @@ extension Date {
 
 // MARK: - Theme
 
-/// Hai bảng màu: mặc định có màu, và bản tương phản cao.
-///
-/// Bản tương phản cao là nền đen tuyệt đối với chữ trắng tuyệt đối — tỉ lệ 21:1,
-/// mức cao nhất thang WCAG đo được, và cao hơn nền trắng chữ đen về mặt cảm nhận
-/// vì loại bỏ hẳn ánh sáng nền chói. Không dùng màu sắc: mức độ quan trọng được
-/// thể hiện bằng *độ sáng* — việc cần chú ý nhất thì trắng nhất, việc đã ổn thì
-/// xám và lùi về sau.
+/// Hai bảng màu: mặc định có màu, và bản nền đen chữ trắng tương phản cao.
+/// Trạng thái hoàn thành vẫn dùng xanh lá để người dùng nhận ra ngay.
 @MainActor
 final class ThemeState: ObservableObject {
     static let shared = ThemeState()
@@ -102,8 +97,8 @@ final class ThemeState: ObservableObject {
     /// Cảnh báo vừa — xám trung tính, vẫn nổi nhưng không át cảnh báo nặng.
     var warning: Color { isHighContrast ? ink(0.62) : Color(red: 0.99, green: 0.55, blue: 0.20) }
 
-    /// Trạng thái tốt — nhạt, lùi về sau vì không cần người dùng xử lý.
-    var positive: Color { isHighContrast ? ink(0.42) : Color(red: 0.18, green: 0.72, blue: 0.47) }
+    /// Trạng thái hoàn thành giữ màu xanh ở cả hai giao diện.
+    var positive: Color { Color(red: 0.18, green: 0.72, blue: 0.47) }
 
     /// Nền màn hình: trắng/đen tuyệt đối ở chế độ tương phản cao.
     var background: Color {

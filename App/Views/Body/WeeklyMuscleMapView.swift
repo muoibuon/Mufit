@@ -22,7 +22,7 @@ struct WeeklyMuscleMapView: View {
             let related = Set(groups.filter(\.trained).map(\.muscle))
             let week = WeeklyMuscleTracker.week(containing: now)
             Card(title: "Bản đồ cơ tuần này", systemImage: "figure.strengthtraining.traditional") {
-                Text("\(AnatomicalMuscle.allCases.count) cấu trúc cơ · nam & nữ")
+                Text("\(AnatomicalMuscle.selectableCases.count) vùng cơ · nam & nữ")
                     .font(.subheadline.weight(.semibold))
                 Text("\(week.start.formatted(.dateTime.day().month())) – \(week.end.addingTimeInterval(-1).formatted(.dateTime.day().month())) · \(trained.count) cấu trúc có bài liên quan")
                     .font(.caption).foregroundStyle(.secondary)
@@ -33,7 +33,7 @@ struct WeeklyMuscleMapView: View {
                 MuscleAnatomyView(sex: figureSex, rear: rear, layer: layer, trained: trained, relatedGroups: related) {
                     selectedMuscle = $0
                 }
-                .frame(width: 190)
+                .frame(width: 240)
                 .padding(.vertical, 10)
                 .frame(maxWidth: .infinity)
                 .background(Color.appCardElevated, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
@@ -59,13 +59,13 @@ struct WeeklyMuscleMapView: View {
                         .frame(maxWidth: .infinity)
                 }.buttonStyle(.bordered)
                 VStack(alignment: .leading, spacing: 5) {
-                    Label("Xanh ✓: có bài liên quan (ước tính)", systemImage: "checkmark.circle.fill").foregroundStyle(Color.brandGreen)
+                    Label("Xanh: có bài liên quan (ước tính)", systemImage: "circle.fill").foregroundStyle(Color(red: 0.08, green: 0.57, blue: 0.39))
                     Label("Vàng: chỉ biết nhóm cơ đã tập", systemImage: "circle.lefthalf.filled").foregroundStyle(.orange)
                     Label("Hồng: chưa có dữ liệu ánh xạ", systemImage: "circle").foregroundStyle(.secondary)
                 }.font(.caption)
-                Text("Tích xanh giữ hết Chủ nhật và làm mới 00:00 thứ Hai theo giờ thiết bị. Ghi chú và lịch sử không bị xóa. Dấu tích không xác nhận mức kích thích hoặc khả năng hồi phục của từng cơ.")
+                Text("Màu xanh giữ hết Chủ nhật và làm mới 00:00 thứ Hai theo giờ thiết bị. Ghi chú và lịch sử không bị xóa. Màu xanh không xác nhận mức kích thích hoặc khả năng hồi phục của từng cơ.")
                     .font(.caption).foregroundStyle(.secondary)
-                Text("Minh họa chọn lọc theo OpenStax 11.3–11.6, gồm cơ, bó cơ delta và một số nhóm cơ. Chọn lớp trung gian/sâu để xem các cấu trúc bị che phủ. Không phải atlas toàn bộ hơn 600 cơ, không phân biệt trái/phải trong dữ liệu tập.")
+                Text("Minh họa chọn lọc theo OpenStax 11.3–11.6, gồm ngực lớn trên/giữa/dưới, ba bó cơ thang, hai đầu cơ nhị đầu, ba đầu cơ tam đầu và các cơ khác. Đây là các vùng hoặc đầu của cùng một cơ, không phải những cơ riêng. Lớp trung gian/sâu là các cửa sổ bóc tách; không phân biệt trái/phải trong dữ liệu tập.")
                     .font(.caption2).foregroundStyle(.secondary)
             }
         }
@@ -83,10 +83,30 @@ struct MuscleDetailView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var context
     @Query private var sessions: [WorkoutSession]
+    @Query(sort: \Exercise.name) private var exercises: [Exercise]
     @State private var note = ""
     @State private var originalNote = ""
     @State private var error: String?
     @State private var confirmDiscard = false
+
+    private func examples(direct: Bool) -> [Exercise] {
+        exercises.filter { exercise in
+            let targets = AnatomicalTrainingTracker.targets(slug: exercise.slug, isCustom: exercise.isCustom)
+            return direct ? targets.direct.contains(muscle) : targets.assisting.contains(muscle)
+        }
+    }
+
+    private var evidence: (String, URL)? {
+        let source: (String, String)
+        switch muscle.parentMuscle {
+        case .pectoralisMajor: source = ("Nghiên cứu góc ghế và ba vùng ngực", "https://pubmed.ncbi.nlm.nih.gov/33049982/")
+        case .trapezius: source = ("Nghiên cứu ba bó cơ thang", "https://pubmed.ncbi.nlm.nih.gov/12774999/")
+        case .bicepsBrachii: source = ("Nghiên cứu biến thể curl và đầu dài nhị đầu", "https://pubmed.ncbi.nlm.nih.gov/24150552/")
+        case .tricepsBrachii: source = ("Nghiên cứu vị trí tay và các đầu tam đầu", "https://pubmed.ncbi.nlm.nih.gov/35819335/")
+        default: return nil
+        }
+        return (source.0, URL(string: source.1)!)
+    }
 
     var body: some View {
         NavigationStack {
@@ -97,8 +117,8 @@ struct MuscleDetailView: View {
                 Form {
                     Section {
                         Label(stat.trained ? "Có bài tập liên quan trong tuần" : "Chưa đủ dữ liệu cho cơ này",
-                              systemImage: stat.trained ? "checkmark.circle.fill" : "circle")
-                            .foregroundStyle(stat.trained ? Color.brandGreen : .secondary)
+                              systemImage: stat.trained ? "circle.fill" : "circle")
+                            .foregroundStyle(stat.trained ? Color(red: 0.08, green: 0.57, blue: 0.39) : .secondary)
                         LabeledContent("Số ngày / số buổi", value: "\(stat.days) ngày / \(stat.sessions) buổi")
                         LabeledContent("Hiệp cơ chính", value: "\(stat.directSets)")
                         LabeledContent("Hiệp tham gia hỗ trợ", value: "\(stat.assistingSets)")
@@ -106,21 +126,53 @@ struct MuscleDetailView: View {
                             LabeledContent("Lần gần nhất", value: last.formatted(date: .abbreviated, time: .shortened))
                         }
                     } header: { Text("Tần suất tuần này") } footer: {
-                        Text("Tích xanh là ước tính từ loại bài tập đã ghi, không phải phép đo hoạt động của cơ. Một ngày có nhiều buổi chỉ tính là một ngày tập. Chỉ tính hiệp có số lần thực hiện > 0 trong buổi đã hoàn thành; không tính khởi động. Cơ hỗ trợ cũng được tích xanh, nhưng chưa thể suy ra mức kích thích bằng cơ chính.")
+                        Text("Màu xanh là ước tính từ loại bài tập đã ghi, không phải phép đo hoạt động của cơ. Một ngày có nhiều buổi chỉ tính là một ngày tập. Chỉ tính hiệp có số lần thực hiện > 0 trong buổi đã hoàn thành; không tính khởi động. Cơ hỗ trợ cũng được tô xanh, nhưng chưa thể suy ra mức kích thích bằng cơ chính.")
+                    }
+                    if !examples(direct: true).isEmpty || !examples(direct: false).isEmpty {
+                        Section {
+                            if !examples(direct: true).isEmpty {
+                                LabeledContent("Ưu tiên vùng này", value: examples(direct: true).map(\.name).joined(separator: ", "))
+                            }
+                            if !examples(direct: false).isEmpty {
+                                LabeledContent("Tham gia hỗ trợ", value: examples(direct: false).map(\.name).joined(separator: ", "))
+                            }
+                        } header: {
+                            Text("Bài tập liên quan trong thư viện")
+                        } footer: {
+                            Text("Ánh xạ theo biến thể bài tập trong thư viện. Góc, biên độ và kỹ thuật thực tế có thể thay đổi vùng được nhấn mạnh; các đầu cơ không hoạt động độc lập tuyệt đối.")
+                        }
                     }
                     Section("Vị trí giải phẫu") {
                         Text(muscle.latin).font(.headline)
+                        if let parent = muscle.parentMuscle {
+                            Text("Một phần của \(parent.label), không phải cơ riêng.")
+                                .font(.caption).foregroundStyle(.secondary)
+                        }
                         Text(muscle.info.region + " · " + MuscleAnatomyGeometry.location(of: muscle).layer.label)
                             .font(.subheadline).foregroundStyle(.secondary)
-                        MuscleAnatomyView(sex: profile.sex, rear: MuscleAnatomyGeometry.location(of: muscle).rear,
-                                          layer: MuscleAnatomyGeometry.location(of: muscle).layer,
-                                          trained: stat.trained ? [muscle] : [], highlighted: muscle) { _ in }
-                            .frame(height: 320).frame(maxWidth: .infinity)
-                            .allowsHitTesting(false).accessibilityHidden(true)
+                        HStack(alignment: .top, spacing: 10) {
+                            VStack(spacing: 5) {
+                                Text("Toàn thân").font(.caption2).foregroundStyle(.secondary)
+                                MuscleAnatomyView(sex: profile.sex, rear: MuscleAnatomyGeometry.location(of: muscle).rear,
+                                                  layer: MuscleAnatomyGeometry.location(of: muscle).layer,
+                                                  trained: stat.trained ? [muscle] : [], highlighted: muscle) { _ in }
+                                    .frame(width: 98, height: 213)
+                            }
+                            VStack(spacing: 5) {
+                                Text("Chi tiết vùng cơ").font(.caption2).foregroundStyle(.secondary)
+                                MuscleFocusView(muscle: muscle, sex: profile.sex, trained: stat.trained)
+                                    .frame(height: 240)
+                                    .background(Color.appCardElevated, in: RoundedRectangle(cornerRadius: 12))
+                                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                            }
+                        }
+                        .frame(maxWidth: .infinity)
+                        .allowsHitTesting(false).accessibilityHidden(true)
                         Text("Viền xanh dương đánh dấu cấu trúc đang xem. Các cửa sổ bóc tách minh họa được chọn riêng theo vùng, không phải một mặt phẳng giải phẫu đồng nhất.")
                             .font(.caption).foregroundStyle(.secondary)
                         Link("OpenStax Anatomy & Physiology 2e · " + muscle.info.source.chapter,
                              destination: muscle.info.source.url).font(.caption)
+                        if let evidence { Link(evidence.0, destination: evidence.1).font(.caption) }
                     }
                     if let group = muscle.group {
                         let groupStats = WeeklyMuscleTracker.stats(records: WeeklyMuscleTracker.records(from: sessions), now: now)
@@ -131,6 +183,12 @@ struct MuscleDetailView: View {
                             let oldNote = profile.muscleNote(for: group)
                             if !oldNote.isEmpty {
                                 LabeledContent("Ghi chú nhóm từ bản trước", value: oldNote)
+                            }
+                            if let parent = muscle.parentMuscle {
+                                let parentNote = profile.muscleNote(forKey: parent.noteKey)
+                                if !parentNote.isEmpty {
+                                    LabeledContent("Ghi chú \(parent.label) từ bản trước", value: parentNote)
+                                }
                             }
                         }
                     }
@@ -194,5 +252,27 @@ struct MuscleDetailView: View {
             profile.muscleNotesJSON = previous
             self.error = "Ghi chú vẫn đang ở đây. Hãy thử lưu lại. \(error.localizedDescription)"
         }
+    }
+}
+
+private struct MuscleFocusView: View {
+    var muscle: AnatomicalMuscle
+    var sex: BiologicalSex
+    var trained: Bool
+
+    var body: some View {
+        let location = MuscleAnatomyGeometry.location(of: muscle)
+        let anchor = MuscleAnatomyGeometry.regions(rear: location.rear, layer: location.layer)
+            .first { $0.muscle == muscle }!.anchor
+        GeometryReader { geometry in
+            let width = 240.0 * 2.4
+            let height = 520.0 * 2.4
+            MuscleAnatomyView(sex: sex, rear: location.rear, layer: location.layer,
+                              trained: trained ? [muscle] : [], highlighted: muscle) { _ in }
+                .frame(width: width, height: height)
+                .position(x: geometry.size.width / 2 + (120 - anchor.0) / 240 * width,
+                          y: geometry.size.height / 2 + (260 - anchor.1) / 520 * height)
+        }
+        .clipped()
     }
 }

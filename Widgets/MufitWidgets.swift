@@ -14,6 +14,7 @@ struct MufitWidgets: WidgetBundle {
 enum WidgetPalette {
     static let ink = Color.primary
     static let faint = Color.secondary
+    static let complete = IconPalette.training
     static let over = AlertPalette.over
     static let overBright = AlertPalette.overBright
 }
@@ -24,6 +25,8 @@ struct WidgetBar: View {
     var height: CGFloat = 8
     var isOver: Bool = false
 
+    private var fillTint: Color { progress >= 1 && !isOver ? WidgetPalette.complete : WidgetPalette.ink }
+
     var body: some View {
         GeometryReader { geo in
             ZStack(alignment: .leading) {
@@ -32,7 +35,7 @@ struct WidgetBar: View {
                     .fill(isOver
                           ? LinearGradient(colors: [WidgetPalette.over, WidgetPalette.overBright],
                                            startPoint: .leading, endPoint: .trailing)
-                          : LinearGradient(colors: [WidgetPalette.ink, WidgetPalette.ink],
+                          : LinearGradient(colors: [fillTint, fillTint],
                                            startPoint: .leading, endPoint: .trailing))
                     .frame(width: geo.size.width * min(max(progress, 0), 1))
             }
@@ -47,6 +50,7 @@ struct WidgetRing: View {
     var lineWidth: CGFloat = 9
 
     private var isOver: Bool { progress > 1 }
+    private var fillTint: Color { progress >= 1 ? WidgetPalette.complete : WidgetPalette.ink }
 
     var body: some View {
         ZStack {
@@ -60,7 +64,7 @@ struct WidgetRing: View {
                 Circle().stroke(WidgetPalette.ink.opacity(0.18), lineWidth: lineWidth)
                 Circle()
                     .trim(from: 0, to: min(max(progress, 0), 1))
-                    .stroke(WidgetPalette.ink, style: StrokeStyle(lineWidth: lineWidth, lineCap: .round))
+                    .stroke(fillTint, style: StrokeStyle(lineWidth: lineWidth, lineCap: .round))
                     .rotationEffect(.degrees(-90))
             }
         }

@@ -155,10 +155,11 @@ struct SettingsView: View {
 
                 Section {
                     Toggle("Nền đen, chữ trắng (tương phản cao)", isOn: $theme.isHighContrast)
+                        .tint(IconPalette.training)
                 } header: {
                     Text("Giao diện")
                 } footer: {
-                    Text("Nền đen tuyệt đối, chữ trắng tuyệt đối — tương phản 21:1, mức cao nhất thang WCAG. Bỏ hết màu; mức độ quan trọng thể hiện bằng độ sáng: cảnh báo nặng trắng nhất, trạng thái tốt xám và lùi về sau. Đỡ chói mắt trong phòng gym thiếu sáng và tiết kiệm pin trên màn OLED.")
+                    Text("Nền đen, chữ trắng có độ tương phản cao. Thanh tiến độ hoàn thành và công tắc đang bật giữ màu xanh lá để dễ nhận biết. Giao diện dịu hơn trong phòng gym thiếu sáng và tiết kiệm pin trên màn OLED.")
                         .font(.caption2)
                 }
 

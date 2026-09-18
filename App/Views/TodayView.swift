@@ -394,8 +394,8 @@ struct SessionRow: View {
                 Text(session.status.label)
                     .font(.caption2.weight(.semibold))
                     .padding(.horizontal, 8).padding(.vertical, 3)
-                    .background(statusColor.mutedFill(), in: Capsule())
-                    .foregroundStyle(statusColor)
+                    .background(session.status == .completed ? IconPalette.training : statusColor.mutedFill(), in: Capsule())
+                    .foregroundStyle(session.status == .completed ? Color.black : statusColor)
             }
             Image(systemName: "chevron.right").font(.caption).foregroundStyle(.tertiary)
         }

@@ -29,6 +29,7 @@ struct AddMeasurementView: View {
 
                 Section {
                     Toggle("Có số đo % mỡ", isOn: $hasBodyFat)
+                        .tint(IconPalette.training)
                     if hasBodyFat {
                         numberRow("Mỡ cơ thể (%)", $bodyFat)
                         numberRow("Khối cơ xương (kg)", $muscle)
@@ -45,6 +46,7 @@ struct AddMeasurementView: View {
 
                 Section {
                     Toggle("Có đo vòng eo", isOn: $hasWaist)
+                        .tint(IconPalette.training)
                     if hasWaist { numberRow("Vòng eo (cm)", $waist) }
                 } footer: {
                     Text("Không có máy đo mỡ vẫn ước lượng được: app dùng công thức RFM từ chiều cao và vòng eo, sai số thấp hơn BMI đáng kể.")

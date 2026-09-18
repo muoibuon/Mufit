@@ -16,7 +16,7 @@ struct SessionSummaryView: View {
             ScrollView {
                 VStack(spacing: 16) {
                     ZStack {
-                        ProgressRing(progress: rate, lineWidth: 14, tint: tint)
+                        ProgressRing(progress: rate, lineWidth: 14, tint: tint, isOverGoalBad: false)
                         VStack(spacing: 2) {
                             Text("\(Int(rate * 100))%")
                                 .font(.largeTitle.bold().monospacedDigit())
@@ -59,7 +59,7 @@ struct SessionSummaryView: View {
                                     ZStack(alignment: .leading) {
                                         Capsule().fill(Color.brand.mutedFill())
                                         Capsule()
-                                            .fill(r >= 0.95 ? Color.brandGreen : (r >= 0.7 ? Color.brandWarm : Color.brandRed))
+                                            .fill(r >= 1 ? Color.brandGreen : (r >= 0.7 ? Color.brandWarm : Color.brandRed))
                                             .frame(width: geo.size.width * min(r, 1))
                                     }
                                 }
@@ -97,7 +97,7 @@ struct SessionSummaryView: View {
     }
 
     private var tint: Color {
-        if rate >= 0.95 { return .brandGreen }
+        if rate >= 1 { return .brandGreen }
         if rate >= 0.7 { return .brandWarm }
         return .brandRed
     }

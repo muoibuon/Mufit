@@ -62,9 +62,11 @@ struct ProgressRing: View {
     var progress: Double
     var lineWidth: CGFloat = 10
     var tint: Color = .brand
+    var isOverGoalBad = true
 
-    private var isOver: Bool { progress > 1 }
+    private var isOver: Bool { isOverGoalBad && progress > 1 }
     private var overflow: Double { min(max(progress - 1, 0), 1) }
+    private var fillTint: Color { progress >= 1 ? .brandGreen : tint }
 
     var body: some View {
         ZStack {
@@ -79,10 +81,10 @@ struct ProgressRing: View {
                     .rotationEffect(.degrees(-90))
             } else {
                 Circle()
-                    .stroke(tint.mutedFill(), lineWidth: lineWidth)
+                    .stroke(fillTint.mutedFill(), lineWidth: lineWidth)
                 Circle()
                     .trim(from: 0, to: min(max(progress, 0), 1))
-                    .stroke(tint, style: StrokeStyle(lineWidth: lineWidth, lineCap: .round))
+                    .stroke(fillTint, style: StrokeStyle(lineWidth: lineWidth, lineCap: .round))
                     .rotationEffect(.degrees(-90))
             }
         }
@@ -113,6 +115,7 @@ struct MacroBar: View {
         if let overAllowance { return consumed - target > overAllowance }
         return ratio > overThreshold
     }
+    private var fillTint: Color { ratio >= 1 && !isOver ? .brandGreen : tint }
     private var overBy: Double { max(0, consumed - target) }
 
     var body: some View {
@@ -135,14 +138,14 @@ struct MacroBar: View {
 
             GeometryReader { geo in
                 ZStack(alignment: .leading) {
-                    Capsule().fill(isOver ? AlertPalette.over.opacity(0.22) : tint.mutedFill())
+                    Capsule().fill(isOver ? AlertPalette.over.opacity(0.22) : fillTint.mutedFill())
 
                     Capsule()
                         .fill(isOver
                               ? LinearGradient(
                                     colors: [AlertPalette.over, AlertPalette.overBright],
                                     startPoint: .leading, endPoint: .trailing)
-                              : LinearGradient(colors: [tint, tint], startPoint: .leading, endPoint: .trailing))
+                              : LinearGradient(colors: [fillTint, fillTint], startPoint: .leading, endPoint: .trailing))
                         .frame(width: geo.size.width * min(ratio, 1))
                 }
             }
@@ -207,30 +210,6 @@ struct StatTile: View {
         .frame(maxHeight: .infinity, alignment: .topLeading)
         .padding(12)
         .background(Color.appCardElevated, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
-    }
-}
-
-/// Nhãn nhỏ cho kiểu set.
-struct SetTypeBadge: View {
-    var type: SetType
-
-    private var tint: Color {
-        switch type {
-        case .normal: return .secondary
-        case .dropSet: return .brandWarm
-        case .superSet: return .brand
-        case .warmup: return .brandGreen
-        case .amrap: return .brandRed
-        }
-    }
-
-    var body: some View {
-        Text(type.shortLabel)
-            .font(.caption2.weight(.bold))
-            .padding(.horizontal, 6)
-            .padding(.vertical, 2)
-            .background(tint.mutedFill(), in: Capsule())
-            .foregroundStyle(tint)
     }
 }
 

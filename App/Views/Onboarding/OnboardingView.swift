@@ -84,7 +84,7 @@ struct OnboardingView: View {
 
             if step != .welcome {
                 ProgressView(value: progress)
-                    .tint(Color.brand)
+                    .tint(progress >= 1 ? Color.brandGreen : Color.brand)
             }
         }
         .padding(.horizontal, 20)
@@ -171,6 +171,7 @@ struct OnboardingView: View {
         case .bodyFat:
             question("Bạn có biết % mỡ cơ thể?", "Có số này thì app dùng công thức Katch-McArdle theo khối nạc — chính xác hơn hẳn. Không có cũng không sao.")
             Toggle("Tôi có số đo % mỡ", isOn: $hasBodyFat)
+                .tint(IconPalette.training)
                 .padding(16)
                 .background(Color.appCard, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
             if hasBodyFat {

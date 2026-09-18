@@ -14,7 +14,7 @@ struct MuscleAtlasExplorer: View {
     @State private var selected: AnatomicalMuscle?
 
     private var filtered: [AnatomicalMuscle] {
-        AnatomicalMuscle.allCases.filter {
+        AnatomicalMuscle.selectableCases.filter {
             search.isEmpty || $0.label.localizedStandardContains(search) || $0.latin.localizedStandardContains(search)
                 || $0.info.region.localizedStandardContains(search)
         }
@@ -36,7 +36,7 @@ struct MuscleAtlasExplorer: View {
                             Picker("Lớp cơ", selection: $layer) { ForEach(AnatomyLayer.allCases) { Text($0.label).tag($0) } }.pickerStyle(.segmented)
                             HStack {
                                 Image(systemName: "minus.magnifyingglass")
-                                Slider(value: $zoom, in: 1...2, step: 0.25).accessibilityLabel("Phóng to mô hình")
+                                Slider(value: $zoom, in: 1...3, step: 0.25).accessibilityLabel("Phóng to mô hình")
                                 Text(zoom.formatted(.number.precision(.fractionLength(2))) + "×").font(.caption.monospacedDigit())
                             }
                             ScrollView(.horizontal) {
@@ -62,7 +62,7 @@ struct MuscleAtlasExplorer: View {
                                                 .font(.caption2).foregroundStyle(.secondary)
                                         }
                                         Spacer()
-                                        if trained.contains(muscle) { Image(systemName: "checkmark.circle.fill").foregroundStyle(Color.brandGreen) }
+                                        if trained.contains(muscle) { Image(systemName: "circle.fill").foregroundStyle(Color(red: 0.08, green: 0.57, blue: 0.39)) }
                                         Image(systemName: "chevron.right").font(.caption).foregroundStyle(.secondary)
                                     }
                                 }.buttonStyle(.plain)
@@ -78,7 +78,7 @@ struct MuscleAtlasExplorer: View {
                     }
                 }
             }
-            .navigationTitle("Tra cứu \(AnatomicalMuscle.allCases.count) cấu trúc")
+            .navigationTitle("Tra cứu \(AnatomicalMuscle.selectableCases.count) vùng cơ")
             .navigationBarTitleDisplayMode(.inline)
             .searchable(text: $search, prompt: "Tên Việt, Latin hoặc vùng cơ")
             .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Xong") { dismiss() } } }

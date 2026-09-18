@@ -218,8 +218,6 @@ struct SetExecutionRow: View {
                 .buttonStyle(.plain)
                 .disabled(isLocked)
 
-                SetTypeBadge(type: set.setType)
-
                 Text("\(set.targetReps) reps × \(String(format: "%g", set.weightKg)) kg")
                     .font(.subheadline.monospacedDigit())
                     .strikethrough(set.isCompleted && (set.actualReps ?? 0) == 0)

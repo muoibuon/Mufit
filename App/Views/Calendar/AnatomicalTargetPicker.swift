@@ -10,8 +10,12 @@ struct AnatomicalTargetPicker: View {
         return AnatomicalTrainingTracker.targets(slug: exercise.slug, isCustom: exercise.isCustom)
     }
     private var automaticNames: String {
-        AnatomicalMuscle.allCases.filter { automatic.direct.contains($0) || automatic.assisting.contains($0) }
-            .map(\.label).joined(separator: ", ")
+        let direct = AnatomicalMuscle.selectableCases.filter { automatic.direct.contains($0) }.map(\.label)
+        let assisting = AnatomicalMuscle.selectableCases.filter { automatic.assisting.contains($0) }.map(\.label)
+        guard !direct.isEmpty || !assisting.isEmpty else { return "" }
+        return [direct.isEmpty ? nil : "Ưu tiên: " + direct.joined(separator: ", "),
+                assisting.isEmpty ? nil : "Tham gia: " + assisting.joined(separator: ", ")]
+            .compactMap { $0 }.joined(separator: "\n")
     }
     private var selected: Set<String> { Set(targets ?? []) }
 
@@ -21,12 +25,21 @@ struct AnatomicalTargetPicker: View {
                 get: { targets == nil },
                 set: { targets = $0 ? nil : [] }
             ))
+            .tint(IconPalette.training)
             if targets == nil {
                 Text(automaticNames.isEmpty ? "Bài này chưa có ánh xạ. Tắt chế độ tự động để khai báo cơ cụ thể." : automaticNames)
                     .font(.caption).foregroundStyle(.secondary)
             } else {
                 TextField("Tìm tên cơ Việt / Latin", text: $search)
-                ForEach(AnatomicalMuscle.allCases.filter {
+                ForEach(AnatomicalMuscle.allCases.filter { $0.isLegacyAggregate && selected.contains($0.rawValue) }) { muscle in
+                    Button {
+                        targets = selected.subtracting([muscle.rawValue]).sorted()
+                    } label: {
+                        Label("Bỏ lựa chọn cũ: \(muscle.label)", systemImage: "minus.circle")
+                    }
+                    .font(.caption)
+                }
+                ForEach(AnatomicalMuscle.selectableCases.filter {
                     search.isEmpty || $0.label.localizedStandardContains(search) || $0.latin.localizedStandardContains(search)
                 }) { muscle in
                     Toggle(isOn: Binding(
@@ -42,9 +55,10 @@ struct AnatomicalTargetPicker: View {
                             Text(muscle.latin).font(.caption2).foregroundStyle(.secondary)
                         }
                     }
+                    .tint(IconPalette.training)
                 }
             }
-            Text("Khai báo theo bài thực hiện hoặc hướng dẫn chuyên môn. Chỉ hiệp thực sự hoàn thành trong buổi đã kết thúc mới tạo dấu ✓. Việc chọn cơ không xác nhận cường độ hay độ an toàn của bài.")
+            Text("Khai báo theo bài thực hiện hoặc hướng dẫn chuyên môn. Chỉ hiệp thực sự hoàn thành trong buổi đã kết thúc mới tô xanh cơ. Việc chọn cơ không xác nhận cường độ hay độ an toàn của bài.")
                 .font(.caption2).foregroundStyle(.secondary)
         }
     }

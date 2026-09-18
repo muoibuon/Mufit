@@ -3,7 +3,10 @@ import Foundation
 @main
 struct AnatomyTests {
     static func main() {
-        let catalogue = Set(AnatomicalMuscle.allCases)
+        let catalogue = Set(AnatomicalMuscle.selectableCases)
+        assert(catalogue.count == 74)
+        assert(AnatomicalMuscle(rawValue: "pectoralisMajor") == .pectoralisMajor)
+        assert(!catalogue.contains(.pectoralisMajor))
         var drawn = Set<AnatomicalMuscle>()
         for layer in AnatomyLayer.allCases {
             for rear in [false, true] {
@@ -29,6 +32,17 @@ struct AnatomyTests {
         }
         let shoulder = AnatomicalTrainingTracker.targets(slug: "seed-lateral-raise")
         assert(shoulder.direct == [.middleDeltoid] && !shoulder.direct.contains(.subscapularis))
+        let flat = AnatomicalTrainingTracker.targets(slug: "seed-barbell-bench-press")
+        let incline = AnatomicalTrainingTracker.targets(slug: "seed-incline-barbell-press")
+        let decline = AnatomicalTrainingTracker.targets(slug: "seed-decline-barbell-press")
+        assert(flat.direct.contains(.middlePectoralisMajor) && flat.assisting.contains(.upperPectoralisMajor))
+        assert(incline.direct.contains(.upperPectoralisMajor) && !incline.direct.contains(.middlePectoralisMajor))
+        assert(decline.direct.contains(.lowerPectoralisMajor) && !decline.direct.contains(.upperPectoralisMajor))
+        assert(AnatomicalTrainingTracker.targets(slug: "seed-shrug").direct == [.upperTrapezius])
+        let curls = AnatomicalTrainingTracker.targets(slug: "seed-barbell-curl")
+        assert(curls.direct.contains(.longHeadBiceps) && curls.direct.contains(.shortHeadBiceps))
+        let overhead = AnatomicalTrainingTracker.targets(slug: "seed-overhead-triceps-extension")
+        assert(overhead.direct == [.longHeadTriceps] && overhead.assisting.contains(.medialHeadTriceps))
         assert(AnatomicalTrainingTracker.targets(slug: "custom-lateral-raise").direct.isEmpty)
         assert(AnatomicalTrainingTracker.targets(slug: "seed-lateral-raise", isCustom: true).direct.isEmpty)
         assert(AnatomicalTrainingTracker.targets(slug: "wger-123").direct.isEmpty)

@@ -173,16 +173,6 @@ enum SetType: String, Codable, CaseIterable, Identifiable {
         }
     }
 
-    var shortLabel: String {
-        switch self {
-        case .normal: return "N"
-        case .dropSet: return "DS"
-        case .superSet: return "SS"
-        case .warmup: return "W"
-        case .amrap: return "A"
-        }
-    }
-
     /// Drop set và super set dồn khối lượng vào ít thời gian nghỉ hơn nên
     /// chi phí năng lượng trên mỗi phút cao hơn set thường.
     var intensityFactor: Double {

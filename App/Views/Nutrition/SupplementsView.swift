@@ -32,6 +32,7 @@ struct SupplementsView: View {
                                 get: { s.isActive },
                                 set: { s.isActive = $0; try? context.save() }
                             ))
+                            .tint(IconPalette.training)
                             .labelsHidden()
                         }
                         if !s.ingredients.isEmpty {
